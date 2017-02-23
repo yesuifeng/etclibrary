@@ -1,0 +1,2 @@
+include ':manyi_etcsdk_libraryBZ'
+include ':manyiEtcSdkDemoBZ'

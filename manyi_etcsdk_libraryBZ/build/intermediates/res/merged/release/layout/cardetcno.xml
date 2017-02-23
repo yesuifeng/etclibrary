@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/layout_head"
+            layout="@layout/manyi_head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_border_bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鲁通卡号:"
+                android:textColor="@color/my_color_5"
+                android:textSize="@dimen/fontsize32px" />
+
+            <EditText
+                android:id="@+id/edit_etcno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/transparent"
+                android:hint="请输入20位卡号"
+                android:inputType="number"
+                android:maxLength="24"
+                android:textColor="@color/my_color_7"
+                android:textSize="@dimen/fontsize28px" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_platno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border_bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号码:"
+                android:textColor="@color/my_color_5"
+                android:textSize="@dimen/fontsize32px" />
+
+            <TextView
+                android:id="@+id/txtPlatNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/transparent"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="19"
+                android:textColor="@color/my_color_7"
+                android:textSize="@dimen/fontsize28px" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border_bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车主姓名:"
+                android:textColor="@color/my_color_5"
+                android:textSize="@dimen/fontsize32px" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/transparent"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="19"
+                android:textColor="@color/my_color_7"
+                android:textSize="@dimen/fontsize28px" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remarkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border_bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注:"
+                android:textColor="@color/my_color_5"
+                android:textSize="@dimen/fontsize32px" />
+
+            <EditText
+                android:id="@+id/edit_etcnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/transparent"
+                android:hint="请输入备注信息"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/my_color_7"
+                android:textSize="@dimen/fontsize28px" >
+            </EditText>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/isDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:button="@drawable/check"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="默认充值卡"
+            android:textColor="@color/my_color_1"
+            android:textSize="@dimen/fontsize28px" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/loing_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="保存" />
+
+        <LinearLayout
+            android:id="@+id/layoutAutoReadCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="您的手机支持NFC功能,一键读卡更快捷"
+                android:textColor="@color/my_color_1"
+                android:textSize="@dimen/fontsize32px" />
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/readEtc"
+                android:textColor="@color/my_color_1"
+                android:textSize="@dimen/fontsize32px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

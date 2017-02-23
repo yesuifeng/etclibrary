@@ -1,0 +1,638 @@
+[
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_juse_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_juse_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\qq_off.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\qq_off.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_huise_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_huise_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\del.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\del.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_back_on_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\grid_item_back_on_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_press_quancun.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_press_quancun.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_tuijian.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_tuijian.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_cancle.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_cancle.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_friend.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_friend.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_juse.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_juse.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_weizhang.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_weizhang.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottomtop.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottomtop.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_ico.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\progress_ico.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_gswhite.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_gswhite.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom_transparent_no_leftpading.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom_transparent_no_leftpading.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom_green.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\order_item_cancel_btn_selector.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\order_item_cancel_btn_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_etc_ok_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_etc_ok_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\text_shape_unfocuse.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\text_shape_unfocuse.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\progress_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_etc_ok_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_etc_ok_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\radio_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\switch_btn.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\switch_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_order.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_wifi_disable.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\umeng_update_wifi_disable.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\back_circle.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\back_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\top.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\top.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_press_leftright.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_press_leftright.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiaoreadcard.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\yuanjiaoreadcard.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_press_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_press_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_back_off_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\list_item_back_off_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_leftright.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_leftright.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_etc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_etc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\back_yuanjiao_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\back_yuanjiao_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom5.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom5.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner_bg.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\spinner_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\radiobutton.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\radiobutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_transparent10.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_transparent10.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_friend.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_friend.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\radio_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\order_not_btn_selectior.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\order_not_btn_selectior.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_sina.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_sina.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\check_chongzhi.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\check_chongzhi.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom15.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom15.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_chnnel_huise_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_chnnel_huise_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom_no_leftpading.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom_no_leftpading.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_transparent0.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_transparent0.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_list.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\progress_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\back_yuanjiao_progress.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\back_yuanjiao_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_right.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_addcar_press_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_addcar_press_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_rectangle_shape.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\rounded_rectangle_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_channel_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_channel_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_ok.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_ok.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_juse_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_juse_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bg_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_bg_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\qzone_off.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\qzone_off.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\email_on.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\email_on.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_tongxingfei.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_tongxingfei.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_shape_unfocuse.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\edit_shape_unfocuse.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\sharelogo.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\sharelogo.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\order_item_shape_unfocuse.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\order_item_shape_unfocuse.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_login_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_login_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_press_friend.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_press_friend.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_yuanjiao_dioa_list.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\bg_yuanjiao_dioa_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottomtop0.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottomtop0.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\order_item_selector.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\order_item_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_channel_press_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_channel_press_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\cust_progress_ico.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\cust_progress_ico.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_back_on_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\list_item_back_on_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_email.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_back_off_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\grid_item_back_off_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_zhongchou.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_zhongchou.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_red.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\toast_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\toast_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_quancun.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_quancun.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_yuanjiao_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\bg_yuanjiao_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\etclistshapedash.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\etclistshapedash.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_order.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\amount_item_selector.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\amount_item_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_chepai_press_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_chepai_press_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_pay_cancle_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_pay_cancle_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\tlayout_shape.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\tlayout_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_left.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_qzone.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_qzone.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_press_order.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_press_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\sina_on.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\sina_on.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_huise_leftright.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_huise_leftright.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\progress.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_circle_green.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_circle_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bg_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_bg_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\sidebar_background.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\sidebar_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_tixing_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_tixing_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_radius.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_radius.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_huise_a6a6a6.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_huise_a6a6a6.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\back_wenzi.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\back_wenzi.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_chnnel_diaooo.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_chnnel_diaooo.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\qzone_on.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\qzone_on.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_back.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\list_item_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\sym_keyboard_space.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\sym_keyboard_space.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_chepai_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_chepai_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_address_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_address_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bg_green.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_bg_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_transparent.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_transparent.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_add_xuxian.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\bg_add_xuxian.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\tb_munion_item_selector.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\tb_munion_item_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\check.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\check.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_selector.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\edit_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_nopadding_bottom.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_nopadding_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_address_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_address_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_tixing_press_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_tixing_press_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_addcar_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_addcar_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\order_text_shape.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\order_text_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\text_shape.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\text_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_huise.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_huise.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_back_off.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\list_item_back_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_circle_green_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_circle_green_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_fff.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_fff.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_pay_ok_press.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_pay_ok_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\view_item_back.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\view_item_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\email_off.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\email_off.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_back.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\grid_item_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\tb_munion_icon.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\tb_munion_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_back_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\list_item_back_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\map_ground.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\map_ground.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bg_green_off.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_bg_green_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_dialog_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\umeng_update_dialog_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_white.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_pay_cancle_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_pay_cancle_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_circle.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom_green_tab_trans.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom_green_tab_trans.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao_quancun.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao_quancun.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\back_yuanjiao.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\back_yuanjiao.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yuanjiao.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yuanjiao.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_pay_ok_on.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_pay_ok_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_etc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_etc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom_tab_trans.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom_tab_trans.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_shape.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\edit_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\summitbutbg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\summitbutbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_suggest.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_suggest.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\ikowenxian.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\ikowenxian.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\submmitbutbg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\submmitbutbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border_bottom0.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_border_bottom0.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\sina_off.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\sina_off.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_tixing_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_tixing_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\qq_on.png",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\qq_on.png"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_chepai_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_chepai_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_yuanjiaobottom_dioa.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\bg_yuanjiaobottom_dioa.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_yzm.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_yzm.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_addcar_bg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_addcar_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_back_border.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\list_item_back_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_shape.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\layout_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_chnnel_dia.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_chnnel_dia.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\drawable\\button_login.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\drawable\\button_login.xml"
+    }
+]

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_white" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/manyi_head" />
+
+    <include
+        android:id="@+id/layoutNoresult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include1"
+        layout="@layout/noresult"
+        android:visibility="gone" />
+
+    <com.manyi.mobile.widget.MyListView
+        android:id="@+id/mylistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutSelect"
+        android:layout_below="@+id/include1"
+        android:divider="@color/my_color_line"
+        android:dividerHeight="1dp" >
+    </com.manyi.mobile.widget.MyListView>
+
+    <LinearLayout
+        android:id="@+id/layoutSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bg_add_xuxian"
+            android:gravity="center"
+            android:onClick="addETC"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="+ 添加ETC卡"
+            android:textColor="@color/my_color_1"
+            android:textSize="@dimen/fontsize32px"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_cancle"
+            android:gravity="center"
+            android:onClick="cancle"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="#575756"
+            android:textSize="@dimen/fontsize32px"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ok"
+            android:gravity="center"
+            android:onClick="select"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="确认"
+            android:textColor="#ff602e"
+            android:textSize="@dimen/fontsize32px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_back"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:textColor="@color/my_color_5"
+        android:textSize="@dimen/fontsize32px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txt_tele"
+        android:gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_tele"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/image_1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/moren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(默认)"
+            android:textColor="@color/my_color_10"
+            android:textSize="@dimen/fontsize28px" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:textColor="@color/my_color_6"
+            android:textSize="@dimen/fontsize28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="济南山东" />-
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_postcode"
+        android:textSize="@dimen/fontsize28px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="251700"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/jiantou_right" />
+
+    <TextView
+        android:id="@+id/txt_tele"
+        android:textColor="@color/my_color_5"
+        android:textSize="@dimen/fontsize32px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/image_1"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="18678801561" />
+
+</RelativeLayout>

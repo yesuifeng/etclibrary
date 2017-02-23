@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayAxle">
+        <item>两轴</item>
+        <item>三轴</item>
+        <item>四轴</item>
+        <item>五轴</item>
+        <item>六轴及以上</item>
+    </string-array>
+    <attr name="input_type">
+        <enum name="text" value="0"/>
+        <enum name="phone" value="1"/>
+        <enum name="textPassword" value="2"/>
+        <enum name="mulite" value="3"/>
+        <enum name="number" value="4"/>
+    </attr>
+    <attr name="is_Select">
+        <enum name="isflase" value="0"/>
+        <enum name="istrue" value="1"/>
+    </attr>
+    <color name="backgrand">#f3f3f3</color>
+    <color name="black">#ff000000</color>
+    <color name="my_color_1">#41b880</color>
+    <color name="my_color_10">#ff3e01</color>
+    <color name="my_color_11">#fc9b34</color>
+    <color name="my_color_12">#e57700</color>
+    <color name="my_color_2">#f7f3d6</color>
+    <color name="my_color_3">#f3f3f3</color>
+    <color name="my_color_4">#41b880</color>
+    <color name="my_color_5">#242424</color>
+    <color name="my_color_6">#666666</color>
+    <color name="my_color_7">#a6a6a6</color>
+    <color name="my_color_8">#e39e02</color>
+    <color name="my_color_9">#41b880</color>
+    <color name="my_color_etcno">#426604</color>
+    <color name="my_color_home_description">#a6a6a6</color>
+    <color name="my_color_home_title">#242424</color>
+    <color name="my_color_line">#d6dadd</color>
+    <color name="my_color_white">#ffffff</color>
+    <color name="tb_munion_item_force">#e3e3e3</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="CustEditTextLRTB"><attr name="input_type"/><attr name="is_Select"/><attr format="reference" name="manyiTextColor"/><attr format="reference" name="manyiBackground"/><attr format="reference" name="hint"/><attr format="reference" name="left_drawble"/><attr format="reference" name="right_drawble"/><attr format="reference" name="lable_content"/><attr format="integer" name="decimallength"/><attr format="integer" name="integerlength"/><attr format="integer" name="max_length"/></declare-styleable>
+    <declare-styleable name="FlowLayout"><attr format="dimension" name="horizontalSpacing"/><attr format="dimension" name="verticalSpacing"/></declare-styleable>
+    <declare-styleable name="roundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fontsize150px">75sp</dimen>
+    <dimen name="fontsize24px">12sp</dimen>
+    <dimen name="fontsize26px">13sp</dimen>
+    <dimen name="fontsize28px">14sp</dimen>
+    <dimen name="fontsize30px">15sp</dimen>
+    <dimen name="fontsize32px">16sp</dimen>
+    <dimen name="fontsize34px">17sp</dimen>
+    <dimen name="fontsize36px">18sp</dimen>
+    <dimen name="fontsize38px">19sp</dimen>
+    <dimen name="fontsize40px">20sp</dimen>
+    <dimen name="fontsize42px">21sp</dimen>
+    <dimen name="fontsize44px">22sp</dimen>
+    <dimen name="fontsize46px">23sp</dimen>
+    <dimen name="fontsize48px">24sp</dimen>
+    <dimen name="fontsize50px">25sp</dimen>
+    <dimen name="fontsize52px">26sp</dimen>
+    <dimen name="fontsize80px">40sp</dimen>
+    <dimen name="index_bar_view_margin">0dp</dimen>
+    <dimen name="index_bar_view_text_size">12sp</dimen>
+    <dimen name="index_bar_view_width">20dp</dimen>
+    <string name="ConnectDevice"><u>输入蓝牙号连接设备</u></string>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMTargetSize">Target size: </string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMUpdateTitle">New version found</string>
+    <string name="address_city">请选择地址</string>
+    <string name="address_jiedao">请输入街道地址</string>
+    <string name="address_lable_city">地址</string>
+    <string name="address_lable_jiedao">街道地址</string>
+    <string name="address_lable_name">姓名</string>
+    <string name="address_lable_postcode">邮编</string>
+    <string name="address_lable_tele">手机号码</string>
+    <string name="address_name">请输入联系人</string>
+    <string name="address_not_result">您的联系人均未开通高速ETC账户，或者未完善车牌号+卡号信息，是否立即将高速ETC推荐给他们</string>
+    <string name="address_postcode">请输入邮编</string>
+    <string name="address_tele">请输入联系电话</string>
+    <string name="app_name">高速ETC体验demo</string>
+    <string name="changeDevice"><u>点击更换设备</u></string>
+    <string name="contact_way">您的QQ号码/手机号（礼物将通过此方式联系到您）</string>
+    <string name="empty_list_msg">No Results</string>
+    <string name="etc_info_amont">卡内余额</string>
+    <string name="etc_info_cardno">鲁通卡号</string>
+    <string name="etc_info_carno">车牌号码</string>
+    <string name="etc_write_faile"><br><br/>写卡失败,请您重新将卡片贴合到手机的NFC感应区,提交写卡申请</br></string>
+    <string name="etc_write_success">写卡成功</string>
+    <string name="help"><u>帮助</u></string>
+    <string name="highspeed_axle">车辆轴数</string>
+    <string name="highspeed_axle_ship">请选择车辆轴数</string>
+    <string name="highspeed_end">终点</string>
+    <string name="highspeed_oilprice">当前油价</string>
+    <string name="highspeed_oilprice_ship">请输入油价</string>
+    <string name="highspeed_orlwear">车辆油耗</string>
+    <string name="highspeed_orlwear_ship">请输入车辆油耗</string>
+    <string name="highspeed_ship">温馨提示,由于数据升级,目前只支持山东省内通行费的计算，其他省份计算即将上线!</string>
+    <string name="highspeed_start">起点</string>
+    <string name="highspeed_weight">车货总重</string>
+    <string name="highspeed_weight_ship">请输入车货总重量</string>
+    <string name="illegal_diglog">目前只支持部分城市大型车违章查询！</string>
+    <string name="invalid_data">数据格式异常，解析失败!</string>
+    <string name="invitation_code">请输入邀请码（选填）</string>
+    <string name="kefu"><u>与客服联系</u></string>
+    <string name="login_pwd_lable">请输入密码(数字、字母或组合)</string>
+    <string name="login_repwd_lable">请输入确认密码(数字、字母或组合)</string>
+    <string name="login_user_lable">请输入手机号</string>
+    <string name="manyixing">高速ETC</string>
+    <string name="my_jifen">我的积分</string>
+    <string name="my_qianbao">我的钱包</string>
+    <string name="my_setting">更多设置</string>
+    <string name="my_tuijian">推荐好友</string>
+    <string name="net_err">网络故障，请检查 !</string>
+    <string name="net_err_timeout">网络故障或超时，请检查重试!</string>
+    <string name="new_pwd">请输入新密码(数字、字母或组合)</string>
+    <string name="new_repwd">再次确认密码(数字、字母或组合)</string>
+    <string name="noCardCharge"><u>无卡充值</u></string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="old_pwd">请输入原密码(数字、字母或组合)</string>
+    <string name="pay_person">点击选择收款人</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="quancun_txl_sousuo"> 姓名/鲁通卡号/车牌号</string>
+    <string name="quancun_ycz_add">  手工添加</string>
+    <string name="quancun_ycz_amount_err1">请为要充值的卡片填写对应的充值金额</string>
+    <string name="quancun_ycz_amount_err2">每个卡片的充值金额必须是100 的整数倍，请核实后提交</string>
+    <string name="quancun_ycz_results_diglog">您的充值订单已经支付成功，但存在部分卡片未完成充值，系统将在2个工作日内为您处理</string>
+    <string name="quancun_ycz_sousuo"> 鲁通卡号/车牌号</string>
+    <string name="quancun_ycz_txl">  手机通讯录</string>
+    <string name="quancun_ycz_zuijin_title">  最近</string>
+    <string name="readEtc"><u>去读卡</u></string>
+    <string name="read_etc">ETC读卡</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="reg"><u>手机快速注册</u></string>
+    <string name="reg_kefu"><u>与客服联系</u></string>
+    <string name="reg_tongyi"><u>高速ETC用户注册协议</u></string>
+    <string name="reg_yanzhengma">请输入验证码</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="search_hint">search</string>
+    <string name="select_diglog">最多一次可以为五张鲁通卡进行充值</string>
+    <string name="setting_diglog">目前只支持山东ETC卡充值/写卡。请设置ETC卡号信息,以便于朋友为您充值时向您推送通知提醒</string>
+    <string name="ship_nointegral">交易时或推荐注册时均可获得积分，积分在交易过程中可以抵扣现金。</string>
+    <string name="suggestion">请输入您的建议或意见！</string>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="time_error">时间有问题</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="wallet_account_provinces">请选择开户行省份</string>
+    <string name="wallet_account_provinces_lable">开户行省份</string>
+    <string name="wallet_bank_card">该卡号默认用于您的收款业务</string>
+    <string name="wallet_bank_card1">请输入银行卡号</string>
+    <string name="wallet_bank_card_lable">银行卡号</string>
+    <string name="wallet_bank_deposit">请选择开户行</string>
+    <string name="wallet_bank_deposit_lable">开户行</string>
+    <string name="wallet_bank_mobile">银行预留的手机号</string>
+    <string name="wallet_bank_mobile_code_lable">短信验证码</string>
+    <string name="wallet_bank_mobile_lable">手机号</string>
+    <string name="wallet_bank_new_card_lable">新银行卡号</string>
+    <string name="wallet_bank_new_mobile_lable">新手机号</string>
+    <string name="wallet_cardhint">银行卡号</string>
+    <string name="wallet_cardlable">卡号</string>
+    <string name="wallet_certificate_name">请输入证件姓名</string>
+    <string name="wallet_certificate_name_lable">真实姓名</string>
+    <string name="wallet_certificate_no">请输入身份件号码</string>
+    <string name="wallet_certificate_no_lable">身份证号</string>
+    <string name="wallet_name">持卡人</string>
+    <string name="wallet_open">请您先完成收款信息设置，否则会影响您的收款业务！</string>
+    <string name="wallet_setting"><u>立即设置</u></string>
+    <string name="wallet_setting_open_ship">请您尽快完成收款信息设置！</string>
+    <string name="wallet_tixian_amount">提现金额</string>
+    <string name="wallet_tixian_time">到账时间</string>
+    <string name="wallet_yinhang"><u>认证支持的银行>></u></string>
+    <string name="write_etc">ETC写卡</string>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme"/>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+    	<item name="android:button">@drawable/check</item>
+	</style>
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="bottom_menu">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="button_fff_yuanjiao">
+        <item name="android:background">@drawable/button_yuanjiao_fff</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/my_color_white</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="dialog_line_color">
+        <item name="android:background">@color/my_color_1</item>
+    </style>
+    <style name="edit_AlertDialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="list_line_color">
+        <item name="android:background">@color/my_color_line</item>
+    </style>
+    <style name="loing_button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+        <item name="android:background">@drawable/button_login</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bg</item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:maxHeight">5dp</item>
+    </style>
+    <style name="main_bg_hui">
+        <item name="android:background">@color/my_color_3</item>
+    </style>
+    <style name="my_list_button">
+        <item name="android:background">@drawable/edit_selector</item>
+        <item name="android:drawableRight">@drawable/jiantou_right</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="my_text_defult_title_000">
+        <item name="android:textColor">@color/my_color_5</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="myinfo_content_style">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="myinfo_lable_style">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/my_color_5</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="myinfo_layout_style"/>
+    <style name="quancun_button_radius">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/button_radius</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    <style name="quancun_chengci_text_6d6d6d">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="quancun_item_title">
+        <item name="android:textColor">@color/my_color_5</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="quancun_order_text_value">
+        <item name="android:textColor">#8f8f8f</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="shareStyle">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+
+    </style>
+    <style name="sure_button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+        <item name="android:background">@drawable/button_login</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+    <style name="text_16000">
+         <item name="android:textColor">@color/my_color_5</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="text_16_424242">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="text_16_666666">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="text_color_rege">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#41b880</item>
+    </style>
+    <style name="text_color_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#41b880</item>
+    </style>
+    <style name="text_content_16defaut">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="text_content_defaut">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="text_defult_content_898989">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="text_defult_content_afafaf">
+        <item name="android:textColor">@color/my_color_7</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="text_defult_title_000">
+        <item name="android:textColor">@color/my_color_5</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="text_defult_title_717171">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize28px</item>
+    </style>
+    <style name="text_defult_title_898989">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="text_defult_title_a6a6a6">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize32px</item>
+    </style>
+    <style name="text_key_title_000">
+        <item name="android:textColor">#414141</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_list_item_content_898989">
+        <item name="android:textColor">@color/my_color_6</item>
+        <item name="android:textSize">@dimen/fontsize24px</item>
+    </style>
+    <style name="text_name">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_ship_a6a6a6">
+        <item name="android:textColor">@color/my_color_7</item>
+        <item name="android:textSize">@dimen/fontsize24px</item>
+    </style>
+    <style name="text_ship_b4b4b4">
+        <item name="android:textColor">#b4b4b4</item>
+        <item name="android:textSize">@dimen/fontsize24px</item>
+    </style>
+    <style name="text_ship_unit">
+        <item name="android:textColor">#8cc8ac</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_tanchuang">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_value_title_000">
+        <item name="android:textColor">#afaaaa</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

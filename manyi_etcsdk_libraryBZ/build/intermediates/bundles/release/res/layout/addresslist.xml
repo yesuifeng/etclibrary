@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_head"
+        android:layout_marginTop="50dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/no_address" />
+
+        <TextView
+            android:id="@+id/txt_ship_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="暂时没有可管理的地址!"
+            android:textColor="#363636"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/addaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ship_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_address_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            android:text="新增地址"
+            android:textColor="#5E5E5E"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_add"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_head"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/my_color_line"
+        android:dividerHeight="1px"
+        android:visibility="visible" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/loing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:onClick="btnAddClick"
+        android:text="添加新地址"
+        android:visibility="visible" />
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

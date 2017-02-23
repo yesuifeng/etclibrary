@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/manyiEtcSdkDemo.iml" filepath="$PROJECT_DIR$/manyiEtcSdkDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manyiEtcSdkDemoBZ/manyiEtcSdkDemoBZ.iml" filepath="$PROJECT_DIR$/manyiEtcSdkDemoBZ/manyiEtcSdkDemoBZ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manyi_etcsdk_libraryBZ/manyi_etcsdk_libraryBZ.iml" filepath="$PROJECT_DIR$/manyi_etcsdk_libraryBZ/manyi_etcsdk_libraryBZ.iml" />
+    </modules>
+  </component>
+</project>

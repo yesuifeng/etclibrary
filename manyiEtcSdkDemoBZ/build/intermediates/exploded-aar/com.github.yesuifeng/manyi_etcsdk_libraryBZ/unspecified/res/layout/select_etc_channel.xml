@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/manyi_head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="请选择您的读卡设备"
+        android:textColor="@color/my_color_5"
+        android:textSize="@dimen/fontsize32px" />
+
+    <View
+        android:id="@+id/view_line"
+        android:background="@color/my_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/image_ico"
+        android:layout_below="@+id/layout_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/my_color_line"
+        android:dividerHeight="0px"
+        >
+    </ListView>
+
+    <TextView 
+        android:id="@+id/noCardCharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize36px"
+        android:textColor="@color/my_color_4"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="无卡充值>>"
+        />
+</LinearLayout>

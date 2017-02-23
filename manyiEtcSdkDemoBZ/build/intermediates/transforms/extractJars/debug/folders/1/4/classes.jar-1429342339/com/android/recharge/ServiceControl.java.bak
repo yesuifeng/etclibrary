@@ -1,0 +1,1055 @@
+package com.android.recharge;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.ServiceConnection;
+import android.os.IBinder;
+import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
+
+import com.genvict.bluetooth.manage.BleApi;
+import com.genvict.bluetooth.manage.BleScanResult;
+import com.genvict.bluetooth.manage.BlueToothService;
+import com.genvict.bluetooth.manage.ConfigFile;
+import com.genvict.bluetooth.manage.GdProtocol;
+import com.genvict.bluetooth.manage.GzProtocol;
+import com.genvict.bluetooth.manage.MyUtil;
+import com.genvict.bluetooth.manage.OnCardCheckListener;
+import com.genvict.bluetooth.manage.OnObuActionListener;
+import com.genvict.bluetooth.manage.OnObuFlashLedListener;
+import com.genvict.bluetooth.manage.ProtoBufProtocol;
+import com.genvict.bluetooth.manage.TyProtocol;
+import com.genvict.bluetooth.manage.fm15160;
+import com.genvict.bluetooth.manage.pki;
+
+import etc.obu.data.CardConsumeRecord;
+import etc.obu.data.CardInformation;
+import etc.obu.data.CardOwner;
+import etc.obu.data.CardTransactionRecord;
+import etc.obu.data.ConnectStatus;
+import etc.obu.data.CreditForLoadResult;
+import etc.obu.data.Device;
+import etc.obu.data.DeviceInformation;
+import etc.obu.data.FunctionStatus;
+import etc.obu.data.ObuInfoBasic;
+import etc.obu.data.ObuSystemInformation;
+import etc.obu.data.ReturnStatus;
+import etc.obu.util.XDebug;
+
+public class ServiceControl {
+	protected String TAG = "ServiceControl";
+	private Context mContext = null;
+	private BlueToothService mService = null;
+	private BluetoothAdapter mBtAdapter = null;
+	private boolean mServiceRegistered = false;
+	private ConnectStatus mConnectStatus = ConnectStatus.CONNECT_IDLE;
+	private String mFindDeviceAddress = null;
+	private int mScanTimeout = 20000;
+	private int mEsamFlag = 0; //0-fm15160, 1-pki
+	
+
+	
+
+	private void logOut(String s) {
+		XDebug.log_i(TAG, s);
+	}
+
+	private void logErr(String s) {
+		XDebug.log_e(TAG, s);
+	}
+
+	public ServiceControl() {
+
+	}
+	public ConnectStatus getConnectStatus()
+	{
+		return mConnectStatus;
+	}
+	public boolean openService(Context context) {
+		
+		try {
+			logOut("openService");
+			mContext = context;
+
+			mBtAdapter = BluetoothAdapter.getDefaultAdapter();
+			if (mBtAdapter == null) {
+				BleApi.gRetStatus.setStatus(ReturnStatus.BLE_INVALID, 0);
+				mConnectStatus = ConnectStatus.ADAPTER_NULL;
+				return false;
+			}
+
+			if (mServiceRegistered) {
+				BleApi.gRetStatus.setStatus(ReturnStatus.REPEAT_ERROR, 0);
+				return false;
+			}
+
+			mServiceRegistered = false;
+			
+			Intent bindIntent = new Intent(mContext, BlueToothService.class);
+			boolean ok = mContext.bindService(bindIntent, mServiceConnection,
+					Context.BIND_AUTO_CREATE);
+
+			if (ok) {
+				
+				mServiceRegistered = true;
+				LocalBroadcastManager.getInstance(mContext).registerReceiver(BleStatusChangeReceiver, makeGattUpdateIntentFilter());
+
+			} else {
+				mServiceRegistered = false;
+				mConnectStatus = ConnectStatus.SERVICE_INVALID;
+				BleApi.gRetStatus.setStatus(ReturnStatus.SERVICE_INVALID, 0);
+				
+			}
+			
+			ConfigFile.setBondDeviceArea(1);//0--通用，1--贵州，2--广东
+			return ok;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+ 
+	}
+	
+	public void closeService() {
+		try {
+			logOut("closeService");
+
+			if (mService != null) {
+				mService.disconnect();
+				mService.close();
+			}
+			
+			unregisterUartReceiver();
+
+			if (mServiceRegistered) {
+				mContext.unbindService(mServiceConnection);
+				mServiceRegistered = false;
+			}
+
+			if (mService != null) {				
+				mService.stopSelf();
+				mService = null;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void setTimeOutSecond(int timeOutSecond)
+	{
+		if( timeOutSecond < 2 || timeOutSecond > 60 ) timeOutSecond = 20;
+		
+		mScanTimeout = timeOutSecond * 1000;
+	}
+    private boolean isBleCanUse()
+    {
+    	BleApi.gRetStatus.setStatus(ReturnStatus.OTHER_ERROR, 0);
+    	
+    	BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+		if (adapter == null) {
+			mConnectStatus = ConnectStatus.ADAPTER_NULL;
+			BleApi.gRetStatus.setStatus(ReturnStatus.BLE_INVALID, 0);
+			return false;
+		} else if (!adapter.isEnabled()) {
+			mConnectStatus = ConnectStatus.BT_DISABLE;
+			BleApi.gRetStatus.setStatus(ReturnStatus.BT_DISABLE, 0);
+			return false;
+		}
+		if( mService == null )
+		{
+			BleApi.gRetStatus.setStatus(ReturnStatus.SERVICE_INVALID, 0);
+			mConnectStatus = ConnectStatus.SERVICE_INVALID;
+			return false;
+		}		
+
+		return true;
+    }
+
+    public FunctionStatus connectDevice(String deviceName)
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return FunctionStatus.BLE_INVALID;
+
+	mService.setScanDevice(deviceName);
+	
+	return connectDevice();
+
+    }
+
+    public FunctionStatus connectDevice()
+    {
+    	MyUtil.writeLog("connectDevice:start");
+
+		
+
+		boolean ok = isBleCanUse();
+		if( !ok ) return FunctionStatus.BLE_INVALID;
+	
+    	ok = mService.startDiscovery(mScanTimeout);
+    	if( !ok ) return FunctionStatus.BLE_INVALID;
+    	
+    	do
+    	{
+    		delayms(500);
+    		if( mConnectStatus == ConnectStatus.FOUND_DEVICE)
+    		{
+    			mService.cancelDiscovery();
+    			break;
+    		}
+   		}while(mConnectStatus != ConnectStatus.SCAN_TIMEOUT);
+		
+		List<Device> resultList =  new ArrayList<Device>();
+		ok = mService.getScanResult(resultList);
+		if( !ok ) 
+ 		{
+			BleApi.gRetStatus.setStatus(ReturnStatus.NO_FIND_DEVICE, 0);
+ 			MyUtil.writeLog("connectDevice: 没有搜索到设备");
+ 			return FunctionStatus.NO_FIND_DEVICE;
+ 		} else
+ 		{
+ 			MyUtil.writeLog("connectDevice: find device num = " + resultList.size());
+			if( resultList.size() == 0 ) MyUtil.writeLog("don't find device");
+			
+		    for (Device listDev : resultList) {
+		    	MyUtil.writeLog("devName: " + listDev.getDeviceName());
+		    	MyUtil.writeLog("devAddress: " + listDev.getAddress());
+		    	MyUtil.writeLog("rssi: " + listDev.getRssi());
+		    }
+ 		}
+		if( resultList.size() == 0 ) return  FunctionStatus.NO_FIND_DEVICE;
+	
+		
+		Device mBtDevice = resultList.get(0);
+		MyUtil.writeLog("connectDevice: link address = " + mBtDevice.getAddress());
+		
+		ok = mService.connect(mBtDevice.getAddress());
+		if( !ok ) 
+		{
+			BleApi.gRetStatus.setStatus(ReturnStatus.NO_FIND_DEVICE, 0);
+ 			return FunctionStatus.NO_FIND_DEVICE;
+ 		}
+
+		
+		long time = System.currentTimeMillis();
+		long now = 0;
+		mConnectStatus = ConnectStatus.CONNECT_IDLE;
+		
+		while(mConnectStatus != ConnectStatus.SERVICES_DISCOVERED)
+    	{
+			delayms(50);
+			now = System.currentTimeMillis();
+    		if( (now-time) > 15000)
+    		{//连接超时
+    			MyUtil.writeLog("connectDevice: wait SERVICES_DISCOVERED timeout");
+    			if( mConnectStatus == ConnectStatus.CONNECT_ALREADY)
+    			{
+    				mService.disconnect();   
+    				delayms(500);
+    			}
+    			BleApi.gRetStatus.setStatus(ReturnStatus.CONNECT_TIMEOUT, 0);
+
+    			return FunctionStatus.TIMEOUT;
+    		}
+    		if( mConnectStatus == ConnectStatus.DISCONNECTED)
+    		{
+    			MyUtil.writeLog("connectDevice: receive DISCONNECTED");
+    			BleApi.gRetStatus.setStatus(ReturnStatus.CONNECT_TIMEOUT, 0);
+    			return FunctionStatus.TIMEOUT;
+    		}
+   		}
+		delayms(1500);
+		
+		if( BleApi.mAreaFlag == 2 )
+		{
+			time = System.currentTimeMillis();			
+			while( !ProtoBufProtocol.canSendData() ) 
+			{	
+				now = System.currentTimeMillis();
+				if( (now - time) > 2000 || mConnectStatus == ConnectStatus.DISCONNECTED)
+				{
+					mService.disconnect();	
+					delayms(500);
+					return FunctionStatus.TIMEOUT;
+	
+				}	
+				delayms(100);
+			
+			}
+		}
+				
+		String sVer = mService.shakeHands();
+
+		getEsamFlag();
+			
+		return FunctionStatus.SUCCESS;
+    }
+    
+    public FunctionStatus connectDevice(String name, String address)
+    {
+    	MyUtil.writeLog("connectDevice:start");
+    	
+
+    	boolean ok = MyUtil.judgeMac(address);
+    	if( !ok )
+    	{
+    		BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+    		return FunctionStatus.PARA_INVALID;
+    	}
+    	
+		ok = isBleCanUse();
+		if( !ok )  return FunctionStatus.BLE_INVALID;
+    	
+		ok = mService.connect(address);
+		if( !ok ) return  FunctionStatus.NO_FIND_DEVICE;
+		
+		
+		long time = System.currentTimeMillis();
+		long now = 0;
+		mConnectStatus = ConnectStatus.CONNECT_IDLE;
+		
+		while(mConnectStatus != ConnectStatus.SERVICES_DISCOVERED)
+    	{
+			delayms(50);
+			now = System.currentTimeMillis();
+    		if( (now-time) > 15000)
+    		{//连接超时
+    			MyUtil.writeLog("connectDevice: wait SERVICES_DISCOVERED timeout");
+    			if( mConnectStatus == ConnectStatus.CONNECT_ALREADY)
+    			{
+    				mService.disconnect();
+    				delayms(500);
+    				
+    			}
+    			BleApi.gRetStatus.setStatus(ReturnStatus.CONNECT_TIMEOUT, 0);
+    			return FunctionStatus.TIMEOUT;
+    		}
+    		if( mConnectStatus == ConnectStatus.DISCONNECTED)
+    		{
+    			MyUtil.writeLog("connectDevice: receive DISCONNECTED");
+    			BleApi.gRetStatus.setStatus(ReturnStatus.CONNECT_TIMEOUT, 0);
+    			return FunctionStatus.TIMEOUT;
+    		}
+   		}
+		
+		delayms(1500);
+	
+		if( BleApi.mAreaFlag == 2 )
+		{
+			time = System.currentTimeMillis();			
+			while( !ProtoBufProtocol.canSendData() ) 
+			{	
+				now = System.currentTimeMillis();
+				if( (now - time) > 2000 || mConnectStatus == ConnectStatus.DISCONNECTED)
+				{
+					mService.disconnect();	
+					delayms(500);
+					return FunctionStatus.TIMEOUT;
+	
+				}	
+				delayms(100);
+			
+			}
+		}
+		
+	
+		String sVer = mService.shakeHands();
+		
+		getEsamFlag();
+	
+		return FunctionStatus.SUCCESS;
+    }
+    public boolean getScanResult(List<Device> resultList, long timeout)
+    {
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+	
+		if( timeout < 2000 || timeout > 60000 ) timeout = 20000;
+			
+    	ok = mService.startDiscovery(timeout);
+    	if( !ok ) return false;
+    	
+    	delayms(timeout);
+     	mService.cancelDiscovery();
+		
+		ok =  mService.getScanResult(resultList);
+		if( !ok ) 
+ 		{
+			BleApi.gRetStatus.setStatus(ReturnStatus.NO_FIND_DEVICE, 0);
+ 			MyUtil.writeLog("没有搜索到设备");
+ 		} else
+ 		{
+ 			MyUtil.writeLog("find device num = " + resultList.size());
+			if( resultList.size() == 0 ) MyUtil.writeLog("don't find device");
+			
+		    for (Device listDev : resultList) {
+		    	MyUtil.writeLog("devName: " + listDev.getDeviceName());
+		    	MyUtil.writeLog("devAddress: " + listDev.getAddress());
+		    	MyUtil.writeLog("rssi: " + listDev.getRssi());
+		    }
+ 		}
+		return ok;
+    }
+    private boolean isConnected()
+    {
+    	if( mConnectStatus == ConnectStatus.SERVICES_DISCOVERED || mConnectStatus == ConnectStatus.CONNECT_ALREADY) return true;
+    	
+    	BleApi.gRetStatus.setStatus(ReturnStatus.DISCONNECTED, 0);
+    	return false;
+    }
+    public DeviceInformation getDeviceInformation() {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return null;
+    	
+		ok = isConnected();
+		if( !ok ) return null;
+		
+		DeviceInformation devInfo = new DeviceInformation();
+    	
+		devInfo.DevName = mService.getLinkDeviceName();
+		devInfo.DevAddress = mService.getLinkDeviceMacAddress();
+		devInfo.VerId = BleApi.readVerId();
+		devInfo.Version = BleApi.readVersion();
+		
+		
+		byte electricity = BleApi.getElectricity();
+		if( electricity > 15 ) devInfo.Battery = "电量正常";
+		else devInfo.Battery = "低电";
+		
+		devInfo.Sn = BleApi.readSn();	
+    	
+		return devInfo;
+
+    }
+////////////////////////////////////////////////////////////
+    private void getEsamFlag()
+    {
+			
+		int result = BleApi.EsamReset();
+		if( result >= 0 ) 
+		{	
+			mEsamFlag = result;
+		}
+	
+	
+	MyUtil.writeLog("mEsamFlag = " + mEsamFlag);
+	
+	
+    }
+    public String getAuthMd5(String rand)//rand: 4bytes随机数16进制ASCII码
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return null;
+    	
+	ok = isConnected();
+	if( !ok ) return null;
+
+	return BleApi.getAuthMd5(rand);
+    }
+
+    public boolean GenRsaKey(int rsatype)
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return false;
+    	
+	ok = isConnected();
+	if( !ok ) return false;
+
+	int[] paramArrayOfI = new int[2];
+	paramArrayOfI[0] = 6000;
+	paramArrayOfI[1] = 30;
+	BleApi.setParameter(paramArrayOfI);
+
+	if( mEsamFlag == 0 ) ok = fm15160.GenRSAKey(rsatype);
+	else ok = pki.GenRSAKey(rsatype);
+
+	paramArrayOfI[0] = 2000;
+	paramArrayOfI[1] = 30;
+	BleApi.setParameter(paramArrayOfI);
+
+	return ok;
+
+    }
+
+    public boolean SaveCert(String Cert)
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return false;
+    	
+	ok = isConnected();
+	if( !ok ) return false;
+
+	int ret;
+
+	if( mEsamFlag == 0 )  ret = fm15160.SaveCert(0x1B, Cert);
+	else ret = pki.SaveCert(0x1B, Cert, false);
+	
+	if( ret != 0 ) return false;
+
+	return true;
+
+    }
+
+    public String GetCert()
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return null;
+    	
+	ok = isConnected();
+	if( !ok ) return null;
+
+	String cert = null;
+
+	if( mEsamFlag == 0 )  cert = fm15160.GetDevCertID(0x1B);
+	else cert = pki.GetDevCertID(0x1B);
+	
+	return cert;
+    }
+    
+ 
+    public String GetDevPubkey()
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return null;
+    	
+	ok = isConnected();
+	if( !ok ) return null;
+
+	if( mEsamFlag == 0 )  return fm15160.GetDevPubkey(0x12);
+	else return pki.GetDevPubkey(0x12);
+
+    }
+
+    public String PubkeyEncypt(String data)
+    {
+
+	boolean ok = isBleCanUse();
+	if( !ok ) return null;
+    	
+	ok = isConnected();
+	if( !ok ) return null;
+
+	if( mEsamFlag == 0 )  return fm15160.PubkeyEncypt(data);
+	else return pki.PubkeyEncypt(data);
+ 
+    }
+
+    public String PrikeyDecypt(String data)
+    {
+
+	boolean ok = isBleCanUse();
+	if( !ok ) return null;
+    	
+	ok = isConnected();
+	if( !ok ) return null;
+
+	if( mEsamFlag == 0 )  return fm15160.PrikeyDecypt(data);
+	else return pki.PrikeyDecypt(data);
+
+    }
+ 
+    public String PrikeySign(String data)
+    {
+
+	boolean ok = isBleCanUse();
+	if( !ok ) return null;
+    	
+	ok = isConnected();
+	if( !ok ) return null;
+
+	if( mEsamFlag == 0 )  return fm15160.PrikeySign(data);
+	else return pki.PrikeySign(data);
+	 
+    }
+
+     public boolean PubkeyVerify(String srcdata, String signdata)
+    {
+
+	boolean ok = isBleCanUse();
+	if( !ok ) return false;
+    	
+	ok = isConnected();
+	if( !ok ) return false;
+
+	int ret;
+	
+	if( mEsamFlag == 0 )  ret = fm15160.PubkeyVerify(srcdata, signdata);
+	else ret = pki.PubkeyVerify(srcdata, signdata);
+	
+	if( ret != 0 ) return false;
+	
+	return true;
+    }
+
+    public boolean CreateFile()
+    {
+	boolean ok = isBleCanUse();
+	if( !ok ) return false;
+    	
+	ok = isConnected();
+	if( !ok ) return false;
+
+	int ret;
+		
+	if( mEsamFlag == 0 ) ret = fm15160.CreateFile();
+	else ret = pki.CreateFile();
+	
+	if( ret != 0 ) return false;
+
+	return true;
+	
+    }
+//////////////////////////////////////////////////////////////////
+    public boolean writeSn(String sDeviceId) {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		return BleApi.writeSn(sDeviceId);	
+
+    }
+
+    public boolean selectEsamNo(byte EsamNo) {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		return BleApi.selectEsam(EsamNo);	
+
+    }
+    
+    public boolean doShakeHands(byte mode)//00-搜寻设备，01--断开设备
+    {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return ok;
+    	
+		ok = isConnected();
+		if( !ok ) return ok;
+		
+		if( mode == 0x00)
+		{
+			if( BleApi.mAreaFlag == 0 ) 
+			{
+				return TyProtocol.doShakeHands((byte)0);
+			}
+			else return true;
+
+		}
+		else if( mode == 0x01)
+		{
+			return BleApi.ObuDisconnect();
+		}
+		
+		return false;
+		
+    }
+    public String cosCommand(boolean isCard, String command) {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return null;
+    	
+		ok = isConnected();
+		if( !ok ) return null;
+		
+		String response = null;
+		if( isCard ) response = BleApi.proCommand(command);
+		else response = BleApi.samCommand(command);
+			
+		return response;
+	}
+
+	public String cosCommand(byte module, String command) {//0-ICC, 1-充值SE， 2-ETC SE
+    		boolean ok = isBleCanUse();
+		if( !ok ) return null;
+    	
+		ok = isConnected();
+		if( !ok ) return null;
+		
+		String response = BleApi.cosCommand(module, command);
+			
+		return response;
+	}
+    public boolean ModuleReset(byte module)//0-ICC, 1-充值SE， 2-ETC SE
+    {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		return BleApi.ModuleReset(module);
+
+    }
+	
+	public boolean flashLight(byte ledNo, byte num, int interval){
+    		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		return BleApi.flashLight(ledNo, num, interval);
+
+	}
+
+	public int QryObuState(){
+    		boolean ok = isBleCanUse();
+		if( !ok ) return -1;
+    	
+		ok = isConnected();
+		if( !ok ) return -1;
+		
+		return BleApi.getObuTamperStatus(); //0--闪灯状态， 1-防拆位状态
+	}    
+
+	public boolean QryReaderInfo(ObuInfoBasic sysInfo){
+    		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+
+		String  xsSysInfo = BleApi.getObuSysInfo();	
+		if( xsSysInfo == null ) return false;	
+		
+		sysInfo.verno = xsSysInfo.substring(18, 20);
+		sysInfo.vernolen = 1;
+
+		sysInfo.agreeno = xsSysInfo.substring(20, 36);
+		sysInfo.agreelen = 8;
+		
+		String xsFlag = xsSysInfo.substring(52, 54);
+		byte[] temp = MyUtil.hexToBin(xsFlag); 
+
+		if( (temp[0] & 0x2) != 0x0 ) sysInfo.state = 1;
+		else sysInfo.state = 0;
+
+		
+		return true;
+	}
+	
+
+	public boolean getCardInformation(CardInformation cardInfo)
+	{
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+		
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		int result = mService.getCardInformation(cardInfo);
+		if( result != 0 ) return false;
+		
+		return true;
+	}
+    
+	public boolean loadCreditGetMac1(int credit, String terminalNo, String pinCode,
+			String procType, String keyIndex, CreditForLoadResult creditResult)
+	{
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+		
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		int result = mService.loadCreditGetMac1(credit, terminalNo, pinCode,
+									procType, keyIndex, creditResult);
+		if( result != 0 ) return false;
+
+		return true;
+	}
+	
+	public boolean loadCreditWriteCard(String sDateMac2,
+			CreditForLoadResult creditResult)
+	{
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+		
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		int result = mService.loadCreditWriteCard(sDateMac2, creditResult);
+		if( result != 0 ) return false;
+
+		return true;
+	}
+
+	public boolean readCardTransactionRecord(String pinCode, int maxNumber,
+			List<CardTransactionRecord> cardRecordList) {
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+		
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		int result = mService.readCardTransactionRecord( pinCode,  maxNumber, cardRecordList);
+		if( result != 0 ) return false;
+
+		return true;
+
+	}
+
+
+	public boolean readCardConsumeRecord(int maxNumber,
+			List<CardConsumeRecord> cardRecordList) {
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+		
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		int result = mService.readCardConsumeRecord(maxNumber, cardRecordList);
+		if( result != 0 ) return false;
+
+		return true;	
+	}
+
+	
+	public boolean readCardOwnerRecord(String pinCode, CardOwner owner) {
+		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+		
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		int result = mService.readCardOwnerRecord(pinCode, owner);
+		if( result != 0 ) return false;
+
+		return true;	
+
+	}
+	public int transCommand(boolean encode, byte cmd, byte[] reqData, int reqDataLen, byte[] resData) {
+		boolean ok = isBleCanUse();
+		if( !ok ) return -1;
+		
+		ok = isConnected();
+		if( !ok ) return -1;
+		
+		 return mService.transCommand(encode, cmd, reqData, reqDataLen, resData);
+		
+	}
+    public void disconnectDevice() {
+		if (mService != null) {
+			mService.disconnect();
+			
+			long time = System.currentTimeMillis();
+			long now = 0;
+			
+			while(mConnectStatus != ConnectStatus.DISCONNECTED)
+			{
+				delayms(50);
+				now = System.currentTimeMillis();
+	    		if( (now-time) > 3000)
+	    		{
+	    			return;
+	    		}
+			}
+			delayms(500);
+			
+		}
+		
+	}
+    public boolean checkCard(boolean bOnOff, int interval, OnCardCheckListener onListener) {
+    	boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		mService.checkCard(bOnOff, interval, onListener);
+		
+		return true;
+
+    }
+
+	public boolean checkTamper(boolean bOnOff, OnObuActionListener onListener)  {
+    		boolean ok = isBleCanUse();
+		if( !ok ) return false;
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		mService.checkTamper(bOnOff, onListener);	
+			
+		return true;
+
+    }
+
+	public boolean checkFlash(OnObuFlashLedListener onListener) {
+    		boolean ok = isBleCanUse();
+		if( !ok ) return  false; 
+    	
+		ok = isConnected();
+		if( !ok ) return false;
+		
+		mService.checkFlash(onListener);	
+		
+		return true;
+
+    }
+    
+	private ServiceConnection mServiceConnection = new ServiceConnection() {
+		public void onServiceConnected(ComponentName className,
+				IBinder rawBinder) {
+			mService = ((BlueToothService.LocalBinder) rawBinder).getService();
+			Log.e("mServiceConnection", "onServiceConnected mService= "
+					+ mService);
+		//	String[] paramArrayOfD = new String[2];
+		//	paramArrayOfD[0] = mDeviceName;
+		//	paramArrayOfD[1] = mDeviceMac;
+			if (!mService.initialize()) {
+				Log.i("mServiceConnection", "Unable to initialize Bluetooth");
+			}
+			
+		}
+
+		public void onServiceDisconnected(ComponentName classname) {
+			mService = null;
+		}
+	};
+	private final BroadcastReceiver BleStatusChangeReceiver = new BroadcastReceiver() {
+
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+
+            final Intent mIntent = intent;
+
+           //*********************//
+            if (action.equals(BlueToothService.ACTION_GATT_CONNECTED)) {
+            	Log.d(TAG, "ACTION_GATT_CONNECTED"); 
+            	MyUtil.writeLog("ACTION_GATT_CONNECTED");
+            	mConnectStatus = ConnectStatus.CONNECT_ALREADY;
+            }
+                       
+          //*********************//
+            if (action.equals(BlueToothService.ACTION_GATT_DISCONNECTED)) {            	
+				Log.d(TAG, "ACTION_GATT_DISCONNECTED");		
+				MyUtil.writeLog("ACTION_GATT_DISCONNECTED");
+				mConnectStatus = ConnectStatus.DISCONNECTED;
+			//	mService.close();
+				
+            }
+
+         
+          //*********************//
+            if (action.equals(BlueToothService.ACTION_GATT_SERVICES_DISCOVERED)) {
+            	Log.d(TAG, "ACTION_GATT_SERVICES_DISCOVERED");
+            	MyUtil.writeLog("ACTION_GATT_SERVICES_DISCOVERED");
+            	mConnectStatus = ConnectStatus.SERVICES_DISCOVERED;
+
+            }      
+          
+           //*********************//
+            if (action.equals(BlueToothService.DEVICE_DOES_NOT_SUPPORT_UART)){
+            	Log.d(TAG, "DEVICE_DOES_NOT_SUPPORT_UART");
+            	MyUtil.writeLog("DEVICE_DOES_NOT_SUPPORT_UART");
+            	mConnectStatus = ConnectStatus.SERVICE_INVALID;
+            	mService.disconnect();
+            }
+
+	   //*******************************//
+	     if (action.equals(BlueToothService.ACTION_NOT_FIND_DEVICE)) {
+	    	 Log.d(TAG, "ACTION_NOT_FIND_DEVICE");
+	    	 MyUtil.writeLog("ACTION_NOT_FIND_DEVICE");
+	    	 mConnectStatus = ConnectStatus.NO_FIND_DEVICE;
+            	 
+            }
+    
+	    //*******************************//
+	     if (action.equals(BlueToothService.ACTION_FIND_DEVICE)) {
+	    	 mConnectStatus = ConnectStatus.FOUND_DEVICE;
+	    	 mFindDeviceAddress = intent.getStringExtra(BlueToothService.EXTRA_DATA);
+                Log.d(TAG, "... onActivityResultdevice.address==" + mFindDeviceAddress);
+              //  MyUtil.writeLog("ACTION_FIND_DEVICE: address = " + mFindDeviceAddress ); 
+                //mDevice = BluetoothAdapter.getDefaultAdapter().getRemoteDevice(mFindDeviceAddress);
+            	//mService.connect(mFindDeviceAddress);
+            	 
+            }
+            
+	    //*******************************//
+	     if (action.equals(BlueToothService.ACTION_START_SCAN)) {
+	    	 Log.d(TAG, "ACTION_START_SCAN");
+	    	 MyUtil.writeLog("ACTION_START_SCAN");
+	    	 mConnectStatus = ConnectStatus.SCANNING; 
+            }
+    
+	    //*******************************//
+	     if (action.equals(BlueToothService.ACTION_STOP_SCAN)) {
+	    	 Log.d(TAG, "ACTION_STOP_SCAN");
+	    	 mConnectStatus = ConnectStatus.SCAN_TIMEOUT; 
+	    	 
+	    	 List<Device> resultList =  new ArrayList<Device>();
+	 		boolean ok = mService.getScanResult(resultList);
+	 		if( !ok ) 
+	 		{
+	 			MyUtil.writeLog("ACTION_STOP_SCAN: 没有搜索到设备");
+	 		} else
+	 		{
+	 			MyUtil.writeLog("ACTION_STOP_SCAN: find device num = " + resultList.size());
+				if( resultList.size() == 0 ) MyUtil.writeLog("don't find device");
+				
+			    for (Device listDev : resultList) {
+			    	Log.i(TAG,"devName: " + listDev.getDeviceName());
+			    	Log.i(TAG,"devAddress: " + listDev.getAddress());
+			    	Log.i(TAG,"rssi: " + listDev.getRssi());
+			    }
+	 		}
+		}
+
+            //********************************************************//      
+        }
+    };
+
+    private static IntentFilter makeGattUpdateIntentFilter() {
+		final IntentFilter intentFilter = new IntentFilter();
+		intentFilter.addAction(BlueToothService.ACTION_GATT_CONNECTED);
+		intentFilter.addAction(BlueToothService.ACTION_GATT_DISCONNECTED);
+		intentFilter.addAction(BlueToothService.ACTION_GATT_SERVICES_DISCOVERED);
+		intentFilter.addAction(BlueToothService.DEVICE_DOES_NOT_SUPPORT_UART);
+		intentFilter.addAction(BlueToothService.ACTION_NOT_FIND_DEVICE);
+		intentFilter.addAction(BlueToothService.ACTION_FIND_DEVICE);
+		intentFilter.addAction(BlueToothService.ACTION_START_SCAN);
+		intentFilter.addAction(BlueToothService.ACTION_STOP_SCAN);
+		return intentFilter;
+	}
+    
+    
+	private void unregisterUartReceiver() {
+		try {
+			if (mContext != null) {
+				LocalBroadcastManager.getInstance(mContext).unregisterReceiver(
+						BleStatusChangeReceiver);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	 private void delayms(long timeout)
+	    {
+		try {
+			Thread.sleep(timeout);
+							
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	    }
+	 
+	
+
+}

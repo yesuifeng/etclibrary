@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\raw\\merchant.p12",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\raw\\merchant.p12"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\raw\\city.s3db",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\raw\\city.s3db"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\raw\\server.crt",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\raw\\server.crt"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\raw\\manyi_keystore.bks",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\raw\\manyi_keystore.bks"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\raw\\rootca.cer",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\raw\\rootca.cer"
+    }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="arrayAxle">
+        <item>两轴</item>
+        <item>三轴</item>
+        <item>四轴</item>
+        <item>五轴</item>
+        <item>六轴及以上</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,7 @@
+#Thu Feb 23 14:49:09 CST 2017
+base.0=C\:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_15e71934b77509d97d98560d5ec7c8700ec54a04
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c1484c29ce35d49f90e41a4e582ff17a55d8b43a\\classes.dex
+base.1=C\:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c1484c29ce35d49f90e41a4e582ff17a55d8b43a
+file.0=C\:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_15e71934b77509d97d98560d5ec7c8700ec54a04\\classes.dex

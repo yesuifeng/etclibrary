@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\raw\\server.crt",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\raw\\server.crt"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\raw\\merchant.p12",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\raw\\merchant.p12"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\raw\\rootca.cer",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\raw\\rootca.cer"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\raw\\city.s3db",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\raw\\city.s3db"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\res\\merged\\debug\\raw\\manyi_keystore.bks",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyiEtcSdkDemoBZ\\build\\intermediates\\exploded-aar\\com.github.yesuifeng\\manyi_etcsdk_libraryBZ\\unspecified\\res\\raw\\manyi_keystore.bks"
+    }
+]

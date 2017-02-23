@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_head"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrolayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/toptime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/state"
+                        style="@style/text_defult_title_717171"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#ff602e"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        style="@style/text_16000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/state"
+                        android:layout_alignBottom="@+id/state"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="0000000000"
+                        android:textColor="#898989"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/mianOrderNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/createTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/mianOrderNo"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@+id/mianOrderNo"
+                        android:layout_below="@+id/mianOrderNo" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/toptime"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/my_color_1" />
+
+                <TextView
+                    android:id="@+id/state_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:textColor="#6d6d6d"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/top_line0"
+                    style="@style/list_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/state_content"
+                    android:layout_marginTop="25dip" />
+
+                <TextView
+                    android:id="@+id/cz_title"
+                    style="@style/quancun_chengci_text_6d6d6d"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/top_line0"
+                    android:background="@color/my_color_3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:text="充值信息"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/top_line1"
+                    style="@style/list_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/cz_title" />
+
+                <com.manyi.mobile.widget.MyListViewFill
+                    android:id="@+id/listview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_line1"
+                    android:background="#fff"
+                    android:divider="#cccccc"
+                    android:dividerHeight="1px" >
+                </com.manyi.mobile.widget.MyListViewFill>
+
+                <View
+                    android:id="@+id/top_line2"
+                    style="@style/list_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/listview1" />
+
+                <RelativeLayout
+                    android:id="@+id/total_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/top_line2"
+                    android:background="@color/my_color_3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp" >
+
+                    <TextView
+                        android:id="@+id/total_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:text=""
+                        android:textColor="#ff602e"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/total"
+                        style="@style/quancun_chengci_text_6d6d6d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/total_money"
+                        android:layout_alignBottom="@+id/total_money"
+                        android:layout_toLeftOf="@+id/total_money"
+                        android:text="合计：" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/quancun_chengci_text_6d6d6d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/total"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/total"
+                        android:text="张卡"
+                        android:visibility="gone"
+                         />
+
+                    <TextView
+                        android:id="@+id/card_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView3"
+                        android:layout_alignBottom="@+id/textView3"
+                        android:layout_toLeftOf="@+id/textView3"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="#ff602e"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/total_text"
+                        style="@style/quancun_chengci_text_6d6d6d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/card_size"
+                        android:layout_toLeftOf="@+id/card_size"
+                        android:visibility="gone"
+                        android:text="共" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/top_line3"
+                    style="@style/list_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/total_title" />
+
+                <RelativeLayout
+                    android:id="@+id/rela1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_line3"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/tlayout_shape"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/fapiaoinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="发票信息"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/billinfo"
+                        style="@style/text_defult_title_000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/fapiaoinfo"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="15dp"
+                        android:text="发票信息:"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/nobill"
+                        style="@style/text_defult_title_000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/billinfo"
+                        android:layout_alignBottom="@+id/billinfo"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="不要发票"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutbill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fapiaoinfo"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/content"
+                            style="@style/text_defult_title_000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:text="发票抬头："
+                            android:visibility="gone" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:background="@android:color/white"
+                            android:enabled="false"
+                            android:text=""
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_line"
+                        style="@style/list_line_color"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_below="@+id/layoutbill"
+                        android:layout_marginTop="10dip"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/relat1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_line"
+                        android:layout_marginLeft="17dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            style="@style/text_defult_title_000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="邮寄信息：" />
+
+                        <LinearLayout
+                            android:id="@+id/linearla"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignTop="@+id/textView9"
+                            android:layout_toLeftOf="@+id/image_jiantou"
+                            android:layout_toRightOf="@+id/textView9"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/user_phone"
+                                style="@style/quancun_order_text_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                style="@style/quancun_order_text_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                style="@style/quancun_order_text_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:enabled="false"
+                                android:maxEms="11"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/image_jiantou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:src="@drawable/jiantou_right"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/bottomtv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_above="@+id/layout_button"
+            android:background="@color/my_color_1" />
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_color_white"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/loing_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_cancle"
+                android:onClick="submitCancel"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="取  消"
+                android:textColor="#575756" />
+
+            <Button
+                android:id="@+id/pay"
+                style="@style/loing_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_ok"
+                android:onClick="submitOrder"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="支  付"
+                android:textColor="#ff602e" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

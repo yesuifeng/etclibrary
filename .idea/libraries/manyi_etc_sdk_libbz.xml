@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="manyi_etc_sdk_libbz">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/manyi_etcsdk_libraryBZ/libs/manyi_etc_sdk_libbz.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

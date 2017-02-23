@@ -1,0 +1,1030 @@
+package com.android.recharge;
+
+import java.util.List;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import com.genvict.bluetooth.manage.BleApi;
+import com.genvict.bluetooth.manage.MyUtil;
+import com.genvict.bluetooth.manage.OnCardCheckListener;
+import com.genvict.bluetooth.manage.OnObuActionListener;
+import com.genvict.bluetooth.manage.OnObuFlashLedListener;
+
+import etc.obu.data.CardConsumeRecord;
+import etc.obu.data.CardInformation;
+import etc.obu.data.CardOwner;
+import etc.obu.data.CardTransactionRecord;
+import etc.obu.data.ConnectStatus;
+import etc.obu.data.CreditForLoadResult;
+import etc.obu.data.Device;
+import etc.obu.data.DeviceInformation;
+import etc.obu.data.FunctionStatus;
+import etc.obu.data.ObuInfoBasic;
+import etc.obu.data.ObuSystemInformation;
+import etc.obu.data.ReturnStatus;
+import etc.obu.data.ServiceStatus;
+import etc.obu.util.CardDictionary;
+import etc.obu.util.XData;
+import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
+
+public class ObuInterface {
+	
+	private Context mContext = null;
+	private ServiceControl mServiceControl;
+	private ConnectStatus mConnectStatus;
+
+	public ObuInterface(Context context) {
+		mContext = context;
+	}
+
+	public void initialize() {
+		try {
+	
+			mServiceControl = new ServiceControl();
+			boolean ok = mServiceControl.openService(mContext);
+			if( ok ) MyUtil.writeLog("打开服务成功");
+			else MyUtil.writeLog("打开服务失败");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public ReturnStatus getErrCode()
+	{
+		return BleApi.gRetStatus;
+	}
+	public ServiceStatus connectDevice(String name, String address) {
+		
+		ServiceStatus serviceStatus = new ServiceStatus();
+		FunctionStatus mStatus = FunctionStatus.FAIL;
+	
+		try {
+			if (mServiceControl != null) {
+				mStatus =  mServiceControl.connectDevice(name, address);
+				
+				if (mStatus == FunctionStatus.SUCCESS) {
+					serviceStatus.setServiceCode(0);					
+				} else {
+					if( mStatus == FunctionStatus.NO_FIND_DEVICE) serviceStatus.setServiceCode(-3);
+					else if( mStatus == FunctionStatus.BLE_INVALID) serviceStatus.setServiceCode(-4);
+					else if( mStatus == FunctionStatus.PARA_INVALID) serviceStatus.setServiceCode(-2);
+					else serviceStatus.setServiceCode(-1);
+					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("连接失败");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+	
+	public ServiceStatus connectDevice() {
+		ServiceStatus serviceStatus = new ServiceStatus();
+		FunctionStatus mStatus = FunctionStatus.FAIL;
+	
+		try {
+			if (mServiceControl != null) {
+				mStatus = mServiceControl.connectDevice();
+				
+				if (mStatus == FunctionStatus.SUCCESS) {
+					serviceStatus.setServiceCode(0);
+					
+				} else {
+					if( mStatus == FunctionStatus.NO_FIND_DEVICE) serviceStatus.setServiceCode(-3);
+					else if( mStatus == FunctionStatus.BLE_INVALID) serviceStatus.setServiceCode(-4);
+					else serviceStatus.setServiceCode(-1);					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("连接失败");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+
+
+
+	public ServiceStatus disconnectDevice() {
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				mServiceControl.disconnectDevice();
+			}
+			serviceStatus.setServiceCode(0);
+			serviceStatus.setServiceInfo("设备连接已断开");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+	
+	
+
+	private boolean isDisconnected()
+	{
+		if( mServiceControl.getConnectStatus() == ConnectStatus.DISCONNECTED) return true;
+		
+		return false;
+	}
+	public ServiceStatus getCardInformation(CardInformation cardInfo) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) 
+			{
+				boolean ok = mServiceControl.getCardInformation(cardInfo);
+				if ( ok ) {				
+					serviceStatus.setServiceCode(0);					
+				} else {					
+					serviceStatus.setServiceCode(-1);					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("连接失败");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+    	
+	
+
+	public String FormDataMac2(String cardId, String sTerminalNo,
+			String procType, String sPayMoney, String sRand, String sOldMoney,
+			String sMac1, String sPaySerial) {
+		
+		String sKey = BleApi.genCreditKey(cardId);
+
+		int balance = XData.str_to_int(sOldMoney);
+		byte[] bBalance = MyUtil.bigIntToBytes(balance);
+		sOldMoney = MyUtil.binToHex(bBalance, 0, 4);
+
+		int pay = XData.str_to_int(sPayMoney);
+		byte[] bMoney = MyUtil.bigIntToBytes(pay);
+		sPayMoney = MyUtil.binToHex(bMoney, 0, 4);
+
+
+		return BleApi.FormDataMac2(cardId, sKey, sTerminalNo, procType,
+				sPayMoney, sRand, sOldMoney, sMac1, sPaySerial);
+	}
+	
+	public ServiceStatus loadCreditGetMac1(String cardId, int credit,
+			String terminalNo, String pinCode, String procType, String keyIndex) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+		CreditForLoadResult creditResult = new CreditForLoadResult();
+		
+		try {
+			if (mServiceControl != null) {
+				
+				boolean ok = mServiceControl.loadCreditGetMac1(credit, terminalNo, pinCode, procType, keyIndex, creditResult);
+				if (ok) {
+					String sOldMoney = creditResult.creditGetOldMoney();
+					byte[] sbin = MyUtil.hexToBin(sOldMoney);
+					int balance = MyUtil.bigBytesToInt(sbin, 4);
+					
+					String urlParam = "";
+					if( cardId.length() == 16 ) urlParam += "a_cid=" + cardId;
+					else urlParam += "a_cid=" + cardId.substring(4);
+					urlParam += "&a_pt=" + credit;
+					urlParam += "&a_rnd=" + creditResult.creditGetRand();
+					urlParam += "&a_cbb=" + balance;
+					urlParam += "&a_m1=" + creditResult.creditGetMac1();
+					urlParam += "&a_on=" + creditResult.creditGetPaySerial();
+					
+					serviceStatus.setServiceCode(0);
+					serviceStatus.setServiceInfo(urlParam);
+				} else {
+					serviceStatus.setServiceCode(-1);
+					serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+				}
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+
+	public ServiceStatus loadCreditWriteCard(String sDateMac2) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+		CreditForLoadResult creditResult = new CreditForLoadResult();
+
+		try {
+			if (sDateMac2 == null || sDateMac2.length() == 0
+					|| mServiceControl == null) {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			} else {
+				boolean ok = mServiceControl.loadCreditWriteCard(sDateMac2, creditResult);
+				if (ok) {					
+					serviceStatus.setServiceCode(0);
+					serviceStatus.setServiceInfo(creditResult.creditGetTac());
+				} else {
+					serviceStatus.setServiceCode(-1);
+					serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+
+	public DeviceInformation getDeviceInformation() {
+		
+		if (mServiceControl == null) return null;
+	
+		return  mServiceControl.getDeviceInformation();
+	}
+
+	public ServiceStatus readCardTransactionRecord(String pinCode,
+			int maxNumber, List<CardTransactionRecord> cardRecordList) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+			
+				boolean ok = mServiceControl.readCardTransactionRecord(
+						pinCode, maxNumber, cardRecordList);
+				if (ok) {				
+					serviceStatus.setServiceCode(0);
+					
+				} else {
+					serviceStatus.setServiceCode(-1);					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+
+	public ServiceStatus readCardConsumeRecord(int maxNumber,
+			List<CardConsumeRecord> cardRecordList) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.readCardConsumeRecord(
+						maxNumber, cardRecordList);
+				if (ok) {
+					
+					serviceStatus.setServiceCode(0);
+					
+				} else {
+					serviceStatus.setServiceCode(-1);					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+
+	public ServiceStatus readCardOwnerRecord(String pinCode, CardOwner owner) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.readCardOwnerRecord(
+						pinCode, owner);
+				if (ok) {					
+					serviceStatus.setServiceCode(0);
+					
+				} else {
+					serviceStatus.setServiceCode(-1);					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+
+	public ServiceStatus transCommand(boolean encode, byte cmd, byte[] reqData,
+			int reqDataLen, byte[] resData) {
+		ServiceStatus serviceStatus = new ServiceStatus();
+		try {
+			int ret = mServiceControl.transCommand(encode, cmd, reqData, reqDataLen,
+					resData);
+			if (ret >= 0) {				
+				serviceStatus.setServiceCode(0);
+			} else {
+				serviceStatus.setServiceCode(ret);
+			}
+			serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return serviceStatus;
+	}
+
+	
+	public String cardCommand(String command) {
+		if( mServiceControl == null ) return null;
+		
+		return mServiceControl.cosCommand(true, command);
+
+	}
+
+	public String esamCommand(String command) {
+		if( mServiceControl == null ) return null;
+		
+		return mServiceControl.cosCommand(false, command);
+
+	}
+	
+	public void releaseLocalContext() {
+		try {
+			if (mServiceControl != null) {
+				mServiceControl.closeService();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public ConnectStatus getConnectStatus()
+	{
+		try {
+			if (mServiceControl != null) {
+				return mServiceControl.getConnectStatus();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return ConnectStatus.CONNECT_IDLE;
+	}
+	public void setTimeOutSecond(int timeOutSecond)
+	{
+		try {
+			if (mServiceControl != null) {
+				mServiceControl.setTimeOutSecond(timeOutSecond);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public ServiceStatus writeSn(String sDeviceId)
+	{
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.writeSn(sDeviceId);
+				if (ok) {					
+					serviceStatus.setServiceCode(0);					
+				} else {
+					serviceStatus.setServiceCode(-1);
+					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+	
+	public ServiceStatus selectEsamNo(byte EsamNo)//00-充值安全模块，01--ETC Esam模块
+	{
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.selectEsamNo(EsamNo);//00-充值安全模块，01--ETC Esam模块
+				if (ok) {					
+					serviceStatus.setServiceCode(0);
+					
+				} else {
+					serviceStatus.setServiceCode(-1);
+					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+	
+	public ServiceStatus doShakeHands(byte mode)//00-搜寻设备，01--断开设备
+	{
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.doShakeHands(mode);//00-搜寻设备，01--断开设备
+				if (ok) {					
+					serviceStatus.setServiceCode(0);
+					
+				} else {
+					serviceStatus.setServiceCode(-1);
+					
+				}
+				serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+	
+	public ServiceStatus getScanResult(List<Device> resultList, long timeout)
+	{
+		ServiceStatus serviceStatus = new ServiceStatus();
+
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.getScanResult(resultList, timeout);
+				if (ok) {					
+					serviceStatus.setServiceCode(0);
+					serviceStatus.setServiceInfo("搜索到设备");
+				} else {
+					serviceStatus.setServiceCode(-1);
+					serviceStatus.setServiceInfo(BleApi.gRetStatus.getErrString());
+				}
+			} else {
+				serviceStatus.setServiceCode(-1);
+				serviceStatus.setServiceInfo("");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return serviceStatus;
+	}
+///////////////////////////////////////////////////	
+	public int OpenReader(String deviceName) {
+		
+		FunctionStatus mStatus = FunctionStatus.FAIL;
+	
+		try {
+			if( deviceName == "" || deviceName == null ) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				mStatus = mServiceControl.connectDevice(deviceName);
+				if (mStatus == FunctionStatus.SUCCESS) {
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);					
+				} 
+
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public int CloseReader() {
+		try {
+			if (mServiceControl != null) {
+				mServiceControl.disconnectDevice();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return 0;
+	}
+	
+	
+	public int QryReaderState() {
+		
+
+		try {
+			if (mServiceControl != null) {
+				int result = mServiceControl.QryObuState();
+				if( result >= 0 ) return result;
+				
+				
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	
+	public int ModuleReset(byte module) {
+		
+		try {
+			if (mServiceControl != null) 
+			{
+				
+				boolean ok = mServiceControl.ModuleReset(module);
+				if ( ok ) {				
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);						
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	
+	public int sendLightNums(int num, int ledNo) {
+		
+		try {
+			if (mServiceControl != null) 
+			{
+				if( num <= 0 || num > 100) num = 10;
+				if( ledNo < 0 || ledNo > 1 ) ledNo = 0;
+				
+				int interval = 1000;
+
+				boolean ok = mServiceControl.flashLight((byte)ledNo, (byte)num, interval);
+				if ( ok ) {				
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);						
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public int QryReaderInfo(ObuInfoBasic sysInfo) {
+		
+		try {
+			if( sysInfo == null ) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			if (mServiceControl != null) 
+			{
+				boolean ok = mServiceControl.QryReaderInfo(sysInfo);
+				if ( ok ) {				
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);						
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+
+	public int CheckReader(byte[] data, int len)//data = rand(8bytes) + md5(32bytes)
+	{
+		try {
+			if( data.length < 40 || len != 40 ) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			byte[] rand = new byte[8];
+			byte[] md5 = new byte[32];
+			System.arraycopy(data, 0, rand, 0, 8);
+			System.arraycopy(data, 8, md5, 0, 32);
+
+			String xsRand = new String(rand);
+			String xsMd5 = new String(md5);			
+
+			if (mServiceControl != null) 
+			{
+				String xsAuthMd5 = mServiceControl.getAuthMd5(xsRand);
+				if( xsAuthMd5 != null ) 
+				{
+					if( xsAuthMd5.equals(xsMd5) ) 
+					{
+						BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+					}
+					else
+					{
+						BleApi.gRetStatus.setStatus(ReturnStatus.VALID_FAIL, 0);	
+					}
+
+				}
+			
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();	
+	}
+
+	public int GenRsaKey(int rsatype)
+	{
+		try {
+			if (mServiceControl != null) 
+			{
+				boolean ok = mServiceControl.GenRsaKey(rsatype);
+				
+				if ( ok ) {				
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);						
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+
+	}
+
+	public int SaveCert(String Cert)
+	{
+		
+		try {
+			if( Cert == "" || Cert == null ) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.SaveCert(Cert);
+				if (ok) {					
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public String GetCert()
+	{
+		String cert = null;
+		try {
+			
+			if (mServiceControl != null) {
+				cert  = mServiceControl.GetCert();
+				if (cert != null) {					
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);					
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return cert;
+	}
+
+	
+	public int GetPubkey(byte[] pubkey)
+	{
+		try {
+			if( pubkey.length < 128 ) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				String xsKey  = mServiceControl.GetDevPubkey();
+				if (xsKey != null) {
+					MyUtil.writeLog(xsKey);
+					MyUtil.writeLog("xsKey len = " + xsKey.length());
+					byte[] bin = MyUtil.hexToBin(xsKey);
+					System.arraycopy(bin, 0, pubkey, 0, bin.length);
+					MyUtil.writeLog("pubkey len = " + bin.length);
+					
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public int PubkeyEncypt(byte[] data, int datalen, byte[] rst)
+	{
+		try {
+			if( data == null || rst == null || rst.length < 128 || data.length < datalen) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				String xsData = MyUtil.binToHex(data, 0, datalen);
+				String xsEncypt  = mServiceControl.PubkeyEncypt(xsData);
+				if (xsEncypt != null) {
+					byte[] bin = MyUtil.hexToBin(xsEncypt);
+					System.arraycopy(bin, 0, rst, 0, bin.length);
+
+					
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+
+	}
+	
+	public int PrikeyDecypt(byte[] rst, int rstlen, byte[] decry)
+	{
+		try {
+			if( decry == null || rst == null || rst.length < rstlen || rstlen != 128) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+
+			if (mServiceControl != null) {
+				String data = MyUtil.binToHex(rst, 0, rstlen);
+				String xsDecry  = mServiceControl.PrikeyDecypt(data);
+				if (xsDecry != null) {
+					byte[] bin = MyUtil.hexToBin(xsDecry);
+					decry[0] = (byte)bin.length;
+					System.arraycopy(bin, 0, decry, 1, bin.length);
+
+					
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public int GetDataSign(byte[] data, int datalen, byte[] sign)
+	{
+		try {
+			if( sign == null || data == null || data.length < datalen || sign.length < 128) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				String xsData = MyUtil.binToHex(data, 0, datalen);
+				String xsSign  = mServiceControl.PrikeySign(xsData);
+				if (xsSign != null) {
+					byte[] bin = MyUtil.hexToBin(xsSign);
+					System.arraycopy(bin, 0, sign, 0, bin.length);
+
+					
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+	
+	public int PubkeyVerify(byte[] data,int datalen, byte[] sign, int signlen)
+	{
+		try {
+			if( sign == null || data == null || data.length < datalen || sign.length < signlen || signlen != 128) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				String srcdata = MyUtil.binToHex(data, 0, datalen);
+				String signdata = MyUtil.binToHex(sign, 0, signlen);
+				boolean ok  = mServiceControl.PubkeyVerify(srcdata, signdata);
+				if ( ok ) {										
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return BleApi.gRetStatus.getStatus();
+		
+
+	}
+
+	public int SendReaderApdu(byte channelID, String apdu, String[] resData)
+	{
+		try {
+			if( apdu == null || resData == null ) 
+			{
+				BleApi.gRetStatus.setStatus(ReturnStatus.PARA_INVALID, 0);
+				return BleApi.gRetStatus.getStatus();
+			}
+			
+			if (mServiceControl != null) {
+				resData[0]  = mServiceControl.cosCommand(channelID, apdu);
+				if ( resData[0] != null ) {										
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return BleApi.gRetStatus.getStatus();
+
+
+	}
+	public int startCardCheckListener(boolean bOnOff, int interval, OnCardCheckListener onListener) {
+		
+		try {
+			if( interval < 1000 || interval > 120000) interval = 2000;
+			
+			if (mServiceControl != null) {
+				boolean ok = mServiceControl.checkCard(bOnOff, interval, onListener);
+				if ( ok ) {										
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				}
+			}
+			else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public int startObuActionListener(boolean bOnOff, OnObuActionListener onListener) {
+		
+		try {
+			if (mServiceControl != null) {
+				boolean ok = mServiceControl.checkTamper(bOnOff, onListener);
+				if ( ok ) {										
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				}
+			}
+			else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+	public int startObuFlashLedListener(OnObuFlashLedListener onListener) {
+		
+		try {
+			if (mServiceControl != null) {
+				boolean ok = mServiceControl.checkFlash(onListener);
+				if ( ok ) {										
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				}
+			}
+			else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return BleApi.gRetStatus.getStatus();
+	}
+
+
+
+	public int CreateFile()
+	{
+		try {
+			if (mServiceControl != null) {
+				boolean ok  = mServiceControl.CreateFile();
+				if ( ok ) {										
+					BleApi.gRetStatus.setStatus(ReturnStatus.SUCCESS, 0);	
+				
+				} 
+			} else {
+				BleApi.gRetStatus.setStatus(ReturnStatus.FAIL, 0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return BleApi.gRetStatus.getStatus();
+
+		
+	}
+	
+///////////////////////////////////////////////////
+	public String SdkVersion() {
+		// TODO Auto-generated method stub		
+		return "Ble-SDK-V1.3.26";
+	}
+
+}

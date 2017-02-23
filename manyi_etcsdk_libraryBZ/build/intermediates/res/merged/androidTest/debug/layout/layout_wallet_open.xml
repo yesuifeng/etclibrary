@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_head" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_head"
+                android:background="#f7f3d6" >
+
+                <TextView
+                    android:id="@+id/txt_ship"
+                    style="@style/text_defult_content_898989"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/image_close"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/wallet_open"
+                    android:textColor="#e79d00" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/image_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/prompt_delete" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/txt_ship"
+                    android:background="#e69d00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_3" >
+
+                <com.manyi.mobile.widget.CustEditTextLRTB
+                    android:id="@+id/edit_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    app:manyiBackground="@drawable/layout_border_bottom"
+                    app:hint="@string/wallet_certificate_name"
+                    app:input_type="text"
+                    app:lable_content="@string/wallet_certificate_name_lable"
+                    app:max_length="10" >
+                </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                <com.manyi.mobile.widget.CustEditTextLRTB
+                    android:id="@+id/edit_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_1"
+                    android:layout_alignRight="@+id/edit_1"
+                    android:layout_below="@+id/edit_1"
+                    app:manyiBackground="@drawable/layout_border_bottom"
+                    app:hint="@string/wallet_certificate_no"
+                    app:input_type="text"
+                    app:lable_content="@string/wallet_certificate_no_lable"
+                    app:max_length="18" >
+                </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                <com.manyi.mobile.widget.CustEditTextLRTB
+                    android:id="@+id/edit_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_1"
+                    android:layout_alignRight="@+id/edit_1"
+                    android:layout_below="@+id/edit_2"
+                    app:manyiBackground="@drawable/layout_border_bottom"
+                    app:hint="@string/wallet_bank_card"
+                    app:input_type="phone"
+                    app:lable_content="@string/wallet_bank_card_lable"
+                    app:max_length="19" >
+                </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                <com.manyi.mobile.widget.CustEditTextLRTB
+                    android:id="@+id/edit_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_1"
+                    android:layout_alignRight="@+id/edit_1"
+                    android:layout_below="@+id/edit_3"
+                    app:manyiBackground="@drawable/layout_border_bottom"
+                    app:hint="@string/wallet_bank_deposit"
+                    app:input_type="phone"
+                    app:lable_content="@string/wallet_bank_deposit_lable"
+                    app:right_drawble="@drawable/jiantou_right" >
+                </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                <com.manyi.mobile.widget.CustEditTextLRTB
+                    android:id="@+id/edit_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_1"
+                    android:layout_alignRight="@+id/edit_1"
+                    android:layout_below="@+id/edit_4"
+                    app:manyiBackground="@drawable/layout_border_bottom"
+                    app:hint="@string/wallet_account_provinces"
+                    app:input_type="phone"
+                    app:lable_content="@string/wallet_account_provinces_lable"
+                    app:right_drawble="@drawable/jiantou_right" >
+                </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                <com.manyi.mobile.widget.CustEditTextLRTB
+                    android:id="@+id/edit_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_1"
+                    android:layout_alignRight="@+id/edit_1"
+                    android:layout_below="@+id/edit_5"
+                    app:manyiBackground="@drawable/layout_border_bottom"
+                    app:hint="@string/wallet_bank_mobile"
+                    app:input_type="phone"
+                    app:lable_content="@string/wallet_bank_mobile_lable"
+                    app:max_length="11" >
+                </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                <LinearLayout
+                    android:id="@+id/layout_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_1"
+                    android:layout_alignRight="@+id/edit_1"
+                    android:layout_below="@+id/edit_6"
+                    android:background="@drawable/layout_border_bottom0" >
+
+                    <com.manyi.mobile.widget.CustEditTextLRTB
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/edit_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iphone_yzm"
+                        app:manyiBackground="@drawable/layout_border_transparent10"
+                        app:hint="@string/reg_yanzhengma"
+                        app:input_type="phone"
+                        app:is_Select="istrue"
+                        app:lable_content="@string/wallet_bank_mobile_code_lable"
+                        app:max_length="6" >
+                    </com.manyi.mobile.widget.CustEditTextLRTB>
+
+                    <TextView
+                        android:id="@+id/iphone_yzm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="1px"
+                        android:background="@drawable/layout_border_left"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="获取验证码"
+                        android:textColor="#41b880" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_yinhang"
+                    style="@style/text_defult_title_898989"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/layout_1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/wallet_yinhang" />
+
+                <TextView
+                    android:id="@+id/check_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkBox1"
+                    android:layout_alignBottom="@+id/checkBox1"
+                    android:layout_toRightOf="@+id/checkBox1"
+                    android:clickable="true"
+                    android:text="《协议》"
+                    android:textColor="#41b880"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_yinhang"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:text="  我已阅读并同意"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/loing_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkBox1"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="下一步" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/btn_submit"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

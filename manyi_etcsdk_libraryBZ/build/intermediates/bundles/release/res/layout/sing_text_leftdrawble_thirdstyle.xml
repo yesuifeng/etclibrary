@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_color_3" >
+
+    <View
+        android:id="@+id/line_1"
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_parent"
+        android:layout_below="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_back" >
+
+        <ImageView
+            android:id="@+id/image_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/myinfo_list_1" />
+
+        <RelativeLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/image_ico" >
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="0dp"
+                android:text="21212"
+                android:textColor="@color/my_color_5"
+                android:textSize="@dimen/fontsize32px" />
+
+            <TextView
+                android:id="@+id/txt_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_1"
+                android:paddingLeft="14dp"
+                android:paddingRight="0dp"
+                android:text="12345"
+                android:textColor="@color/my_color_7"
+                android:textSize="@dimen/fontsize28px" />
+
+            <TextView
+                android:id="@+id/txt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_tip"
+                android:paddingLeft="14dp"
+                android:paddingRight="0dp"
+                android:paddingTop="5dp"
+                android:text="移动信联宝是什么 ?"
+                android:textColor="@color/my_color_9"
+                android:textSize="@dimen/fontsize28px" />
+
+            <TextView
+                android:id="@+id/txt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_tip"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/txt_2"
+                android:paddingTop="5dp"
+                android:text="去免费申请"
+                android:textColor="@color/my_color_9"
+                android:textSize="@dimen/fontsize28px" />
+
+            <TextView
+                android:id="@+id/txt_ship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/txt_tip"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/jiantou_right"
+                android:textColor="@color/my_color_7"
+                android:textSize="@dimen/fontsize24px" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <View
+        android:layout_below="@+id/rel_parent"
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+</RelativeLayout>

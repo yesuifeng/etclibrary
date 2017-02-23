@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\city.s3db",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\bundles\\debug\\res\\raw\\city.s3db"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\rootca.cer",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\bundles\\debug\\res\\raw\\rootca.cer"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\server.crt",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\bundles\\debug\\res\\raw\\server.crt"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\merchant.p12",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\bundles\\debug\\res\\raw\\merchant.p12"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\manyi_keystore.bks",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\bundles\\debug\\res\\raw\\manyi_keystore.bks"
+    }
+]

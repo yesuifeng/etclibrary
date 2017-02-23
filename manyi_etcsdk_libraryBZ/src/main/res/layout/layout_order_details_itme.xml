@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/cph"
+        style="@style/text_defult_title_000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="鲁A33333" />
+
+    <TextView
+        android:id="@+id/text_3"
+        style="@style/text_defult_content_898989"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cph"
+        android:layout_below="@+id/cph"
+        android:layout_marginTop="1dp"
+        android:text="卡号：" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/cph"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:src="@drawable/chongzhiyonghu_ico" />
+
+    <TextView
+        android:id="@+id/card_no"
+        style="@style/text_defult_content_898989"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_3"
+        android:layout_below="@+id/cph"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/text_3"
+        android:layout_alignBaseline="@+id/text_3"
+        android:text="1234567890111111" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/money_jie"
+        android:text="￥"
+        android:textColor="#ff602e"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/money_jie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/delete"
+        android:text="20000"
+        android:textColor="#ff602e"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/text_defult_title_898989"
+         android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cph"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/cph"
+        android:text="(张三)" />
+    <ImageView
+        android:id="@+id/state_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+       />
+
+</RelativeLayout>

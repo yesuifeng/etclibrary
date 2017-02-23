@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ZFCardReaderAPI2016080501">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/manyi_etcsdk_libraryBZ/libs/ZFCardReaderAPI2016080501.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_3" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <View
+        android:id="@+id/line_1"
+        style="@style/list_line_color"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@+id/layout_head" />
+
+    <RelativeLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1" >
+
+        <TextView
+            android:id="@+id/no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/nfc_write_failure"
+            android:text="您目前还未绑定银行卡"
+            android:textColor="@color/my_color_7"
+            android:textSize="@dimen/fontsize28px"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/mylistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:minHeight="300dp" >
+        </ListView>
+
+        <include layout="@layout/progressbar" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_2"
+        style="@style/list_line_color"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@+id/layout_list" />
+
+    <Button
+        android:id="@+id/btn_loginout"
+        style="@style/loing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="退出当前账号" />
+
+</RelativeLayout>

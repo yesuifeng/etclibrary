@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_bg_hui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <com.manyi.mobile.widget.MyListViewFill
+        android:id="@+id/mylistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_head"
+        android:divider="@null"
+        android:dividerHeight="0px" >
+    </com.manyi.mobile.widget.MyListViewFill>
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/mylistview" />
+    <include layout="@layout/progressbar"/>
+
+</RelativeLayout>

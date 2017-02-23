@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edit_amount"
+        style="@style/text_ship_a6a6a6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_border_circle"
+        android:hint="自定义金额"
+        android:padding="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text=""
+        android:maxLength="5"
+        android:textColor="#a6a6a6" />
+
+</LinearLayout>

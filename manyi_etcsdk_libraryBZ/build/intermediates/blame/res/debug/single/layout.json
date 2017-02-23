@@ -1,0 +1,390 @@
+[
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\pushrefreshhead.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\pushrefreshhead.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\address_detail.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\address_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cust_dialog_twobutton.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cust_dialog_twobutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\etc_list.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\etc_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\bluetoothtest.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\bluetoothtest.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_readnfc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_readnfc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_find.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_find.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\bill_detail_list.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\bill_detail_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_feedback.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\bill_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\bill_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\sing_text_leftdrawble.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\sing_text_leftdrawble.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\device_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\device_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\city_select.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\city_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\integral_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\integral_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_wallet_open.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_wallet_open.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_quancun_order_query_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_quancun_order_query_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\precharge_etc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\precharge_etc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cust_textview.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cust_textview.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\select_custom_dialog.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\select_custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\select_etc_channel.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\select_etc_channel.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\brankcard_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\brankcard_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_quancun_home.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_quancun_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\single_list.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\single_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\wallet_pay_select.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\wallet_pay_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\input_auto_edittext.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\input_auto_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\pull_to_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_nfc_write_state.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_nfc_write_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\test_add_order.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\test_add_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_ycz_add_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_ycz_add_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\progressbar.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\progressbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_reg_next.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_reg_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\loading_empty_view.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\loading_empty_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_carimg.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_carimg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_test.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\my_prize_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\my_prize_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cust_edittext.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cust_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_quancun_listview_footer_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_quancun_listview_footer_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\noresult.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\noresult.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\precharge_etc_new.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\precharge_etc_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\address_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\address_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\device_list.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\device_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\bluetooth_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\bluetooth_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\sing_text_leftdrawble_secondstyle.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\sing_text_leftdrawble_secondstyle.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\read_etc_bluetooth.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\read_etc_bluetooth.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\amount_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\amount_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\sing_text_leftdrawble_thirdstyle.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\sing_text_leftdrawble_thirdstyle.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\select_custom_readcard.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\select_custom_readcard.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_quancun_mode.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_quancun_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_nfc_ycz_result.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_nfc_ycz_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\photo_certification.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\photo_certification.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\country_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\country_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_order_details_itme.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_order_details_itme.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\etcdevices_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\etcdevices_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\index_bar_view.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\index_bar_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_quancun_nfc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_quancun_nfc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\manyi_head.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\manyi_head.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\exchangestate.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\exchangestate.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\section_row_view.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\section_row_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\tan_bottom.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\tan_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\tabwidget.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\tabwidget.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_order_result_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_order_result_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\progressbar_white.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\progressbar_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\notice_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\notice_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\amount_item_input.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\amount_item_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\read_etc_usb.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\read_etc_usb.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\single_text.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\single_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_regacontent.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_regacontent.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_order_spinner_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_order_spinner_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\province.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\province.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cust_listview.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cust_listview.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_order_not_result.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_order_not_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\read_etc_nfc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\read_etc_nfc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cust_order_spinner.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cust_order_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_nfc_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_nfc_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\bluetooth_dialog.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\bluetooth_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cardetcno.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cardetcno.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_order_details.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_order_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\mpos_read_etc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\mpos_read_etc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\head_ship.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\head_ship.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\more_setting.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\more_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\head_input.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\head_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_datetime.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\dialog_datetime.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\addresslist.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\addresslist.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\bill_detail.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\bill_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_order_state.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_order_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\opencardetc.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\opencardetc.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\activity_template.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\activity_template.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\cust_spinner_listview.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\cust_spinner_listview.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\my_auth.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\my_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_reset_password.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\etc_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\etc_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\etcno_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\etcno_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\my_certification.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\my_certification.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\popview.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\popview.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\layout_ycz_select_order_item.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\layout_ycz_select_order_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\build\\intermediates\\res\\merged\\debug\\layout\\tlayout_order_details_itme.xml",
+        "source": "C:\\Users\\tangzheng\\Desktop\\git\\manyiEtcSdkDemo\\manyi_etcsdk_libraryBZ\\src\\main\\res\\layout\\tlayout_order_details_itme.xml"
+    }
+]

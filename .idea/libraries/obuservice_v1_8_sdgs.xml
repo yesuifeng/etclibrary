@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="obuservice_v1.8_sdgs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/manyi_etcsdk_libraryBZ/libs/obuservice_v1.8_sdgs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

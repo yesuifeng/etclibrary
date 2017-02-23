@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="manyi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/manyi_etcsdk_libraryBZ/libs/manyi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

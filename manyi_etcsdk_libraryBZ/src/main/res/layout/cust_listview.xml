@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_head" >
+
+        <RelativeLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/not_order" />
+
+            <TextView
+                android:id="@+id/txt_ship_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="你还没有相关订单"
+                android:textColor="#363636"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ship_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/order_not_btn_selectior"
+                android:paddingBottom="5dip"
+                android:paddingLeft="30dip"
+                android:paddingRight="30dip"
+                android:paddingTop="5dip"
+                android:text="回到首页"
+                android:textColor="#363636"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.manyi.mobile.widget.MyListView
+            android:id="@+id/mylistview"
+            style="@style/main_bg_hui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_head_text"
+            android:divider="@color/my_color_line"
+            android:dividerHeight="1px" >
+        </com.manyi.mobile.widget.MyListView>
+
+        <RelativeLayout
+            android:id="@+id/layout_head_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <LinearLayout
+                android:id="@+id/layout_order_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/layout_order_pendding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_border_bottom_green_tab_trans"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_order_pendding"
+                        style="@style/text_defult_title_a6a6a6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待支付"
+                        android:textColor="@color/my_color_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="center" >
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/my_color_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_order_precharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_border_bottom_tab_trans"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_order_precharge"
+                        style="@style/text_defult_title_a6a6a6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="充值中" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="center" >
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/my_color_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_order_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_border_bottom_tab_trans"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_order_all"
+                        style="@style/text_defult_title_a6a6a6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

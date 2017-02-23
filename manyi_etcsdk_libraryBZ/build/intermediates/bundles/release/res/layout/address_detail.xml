@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_head"
+        android:layout_marginTop="20dp"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:hint="@string/address_name"
+        app:input_type="text"
+        app:lable_content="@string/address_lable_name"
+        app:max_length="20" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/edit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_1"
+        android:layout_alignRight="@+id/edit_1"
+        android:layout_below="@+id/edit_1"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:hint="@string/address_tele"
+        app:input_type="phone"
+        app:lable_content="@string/address_lable_tele"
+        app:max_length="11" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/edit_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_1"
+        android:layout_alignRight="@+id/edit_1"
+        android:layout_below="@+id/edit_2"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:hint="@string/address_postcode"
+        app:input_type="phone"
+        app:lable_content="@string/address_lable_postcode"
+        app:max_length="6" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/edit_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_1"
+        android:layout_alignRight="@+id/edit_1"
+        android:layout_below="@+id/edit_5"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:hint="@string/address_city"
+        app:input_type="text"
+        app:lable_content="@string/address_lable_city"
+        app:right_drawble="@drawable/jiantou_right" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/edit_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_1"
+        android:layout_alignRight="@+id/edit_1"
+        android:layout_below="@+id/edit_3"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:hint="@string/address_jiedao"
+        app:input_type="mulite"
+        app:lable_content="@string/address_lable_jiedao"
+        app:max_length="100" />
+     <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@+id/edit_1"
+         android:layout_alignRight="@+id/edit_1"
+        android:layout_below="@+id/edit_4"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:button="@drawable/check"
+        android:text="  设置默认地址"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/loing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_margin="10dp"
+        android:onClick="btnSubmitClick"
+        android:gravity="center_horizontal"
+        android:text="保存" />
+    
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

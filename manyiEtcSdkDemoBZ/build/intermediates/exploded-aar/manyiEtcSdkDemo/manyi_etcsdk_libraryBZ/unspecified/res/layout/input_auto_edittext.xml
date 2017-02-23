@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_white" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/head_input" />
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_border_bottom"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <AutoCompleteTextView
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:textColor="@color/my_color_5"
+            android:textSize="@dimen/fontsize40px" >
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/my_color_white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/my_color_line"
+        android:dividerHeight="1px"
+        android:visibility="gone" >
+    </ListView>
+    <View 
+         android:layout_width="match_parent"
+          android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:layout_below="@+id/myListView"
+        android:layout_height="1px"/>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

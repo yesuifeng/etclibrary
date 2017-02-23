@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cph"
+            style="@style/text_defult_title_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鲁A33333" />
+
+        <TextView
+            android:id="@+id/card_no"
+            style="@style/text_defult_content_898989"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890111111" />
+
+        <TextView
+            android:id="@+id/txtOrderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="订单金额:￥2000"
+            android:textColor="@color/my_color_home_title"
+            android:textSize="@dimen/fontsize28px" />
+
+        <TextView
+            android:id="@+id/txtRedPackageAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="红包金额:￥2000"
+            android:textColor="@color/my_color_home_title"
+            android:textSize="@dimen/fontsize28px" />
+
+        <TextView
+            android:id="@+id/txtActualPaymentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="实付金额:￥2000"
+            android:textColor="@color/my_color_10"
+            android:textSize="@dimen/fontsize28px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageState"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

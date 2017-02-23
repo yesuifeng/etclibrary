@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutNoresult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="200dp"
+    android:gravity="center"
+    android:background="@color/my_color_white"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/txtShip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="40dp"
+        android:drawableTop="@drawable/not_order"
+        android:text="暂无账单信息"
+        android:textColor="@color/my_color_home_description"
+        android:textSize="@dimen/fontsize32px" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/order_not_btn_selectior"
+        android:paddingBottom="3dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="3dp"
+        android:text="回到首页"
+        android:textColor="@color/my_color_5"
+        android:textSize="@dimen/fontsize32px"
+        android:visibility="gone" />
+
+</RelativeLayout>

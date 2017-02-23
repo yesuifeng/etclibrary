@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 设计师露露惹不得 -->
+    <color name="transparent">#00000000</color>
+    <color name="my_color_white">#ffffff</color>
+    <color name="my_color_line">#d6dadd</color>
+    <color name="my_color_1">#41b880</color>
+    <color name="my_color_2">#f7f3d6</color>
+    <color name="my_color_3">#f3f3f3</color>
+    <color name="my_color_4">#41b880</color>
+    <color name="my_color_5">#242424</color>
+    <color name="my_color_6">#666666</color>
+    <color name="my_color_7">#a6a6a6</color>
+    <color name="my_color_8">#e39e02</color>
+    <color name="my_color_9">#41b880</color>
+    <color name="my_color_10">#ff3e01</color>
+    <color name="my_color_11">#fc9b34</color>
+    <color name="my_color_12">#e57700</color>
+    <color name="backgrand">#f3f3f3</color>
+    <color name="black">#ff000000</color>
+    <color name="my_color_home_title">#242424</color>
+    <color name="my_color_home_description">#a6a6a6</color>
+    <color name="my_color_etcno">#426604</color>
+    <color name="white">#ffffff</color>
+    <!-- 设计师露露 -->
+
+</resources>

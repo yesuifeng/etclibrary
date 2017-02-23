@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rabit_thread">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/manyi_etcsdk_libraryBZ/libs/rabit_thread.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

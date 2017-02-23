@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99232323" >
+
+    <LinearLayout
+        android:id="@+id/umeng_update_frame"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/umeng_update_dialog_bg"
+        android:orientation="vertical"
+        android:paddingBottom="8dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <ImageView
+                android:id="@+id/umeng_update_wifi_indicator"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/UMGprsCondition"
+                android:src="@drawable/umeng_update_wifi_disable"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/text_defult_title_000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:text="提示"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/umeng_update_id_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/aboutbottom"
+                android:focusable="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- split -->
+
+        <View
+            style="@style/dialog_line_color"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp" />
+        <!-- Content -->
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/mProgress_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:progress="0"
+            android:visibility="gone" />
+        <!-- Ignore CheckBox -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shebei_shiyi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:text="设备自动连接失败，请输入设备号进行连接"
+            android:textColor="@color/my_color_home_title"
+            android:textSize="@dimen/fontsize32px" />
+
+        <com.manyi.mobile.widget.CustEditTextLRTB
+            android:id="@+id/bluetoothNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" >
+        </com.manyi.mobile.widget.CustEditTextLRTB>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/connectOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_login"
+                android:focusable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="连接"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/fontsize32px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

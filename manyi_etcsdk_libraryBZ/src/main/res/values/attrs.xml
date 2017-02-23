@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="input_type">
+        <enum name="text" value="0" />
+        <enum name="phone" value="1" />
+        <enum name="textPassword" value="2" />
+        <enum name="mulite" value="3" />
+        <enum name="number" value="4" />
+    </attr>
+    <attr name="is_Select">
+        <enum name="isflase" value="0" />
+        <enum name="istrue" value="1" />
+    </attr>
+
+    <declare-styleable name="CustEditTextLRTB">
+        <attr name="input_type" />
+        <attr name="is_Select" />
+        <attr name="manyiTextColor" format="reference" />
+        <attr name="manyiBackground" format="reference" />
+        <attr name="hint" format="reference" />
+        <attr name="left_drawble" format="reference" />
+        <attr name="right_drawble" format="reference" />
+        <attr name="lable_content" format="reference" />
+        <attr name="decimallength" format="integer" />
+        <attr name="integerlength" format="integer" />
+        <attr name="max_length" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+<!-- 流布局 -->
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+</resources>

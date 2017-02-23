@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.manyi.mobile.widget.MyListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/my_color_line"
+        android:dividerHeight="1px" >
+    </com.manyi.mobile.widget.MyListView>
+
+    <RelativeLayout
+        android:id="@+id/layout_ship"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/image_ship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/nfc_write_success" />
+
+        <TextView
+            android:id="@+id/txt_ship_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ship"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="好习惯,您还没有违章,继续保持呦!"
+            android:textColor="@color/my_color_7"
+            android:textSize="@dimen/fontsize28px" />
+
+        <Button
+            android:id="@+id/button_ship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ship_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/order_not_btn_selectior"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="@dimen/fontsize28px"
+            android:paddingTop="8dp"
+            android:text="回到首页"
+            android:textColor="@color/my_color_5"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:textSize="16sp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如果您的意见被采纳，我们将有神秘的礼物送出哦，请您留下您的联系方式！"
+            android:textColor="#666666"
+            android:textSize="@dimen/fontsize32px" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_border_suggest"
+            android:hint="您的QQ号码/手机号(礼物将通过此方式联系到您)"
+            android:inputType="text"
+            android:maxLength="60"
+            android:textColor="@color/my_color_6"
+            android:textColorHint="#a9a9a9"
+            android:textSize="@dimen/fontsize30px" />
+
+        <EditText
+            android:id="@+id/tv_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_border_suggest"
+            android:hint="请输入您的建议或意见！"
+            android:lines="7"
+            android:maxLength="500"
+            android:textColor="@color/my_color_6"
+            android:textColorHint="#a9a9a9"
+            android:textSize="@dimen/fontsize30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right" >
+
+            <TextView
+                android:id="@+id/tv_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_suggestion"
+                android:text="0"
+                android:textColor="#a9a9a9"
+                android:textSize="@dimen/fontsize28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/500"
+                android:textColor="#a9a9a9"
+                android:textSize="@dimen/fontsize28px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sumbit"
+            style="@style/loing_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:enabled="false"
+            android:text="提交" />
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        style="@style/text_defult_title_000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="金额：" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/custEditTextLRTB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:input_type="number"
+        app:max_length="7" >
+    </com.manyi.mobile.widget.CustEditTextLRTB>
+
+    <TextView
+        android:id="@+id/txt_2"
+        style="@style/text_defult_title_000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custEditTextLRTB1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="收款人：" />
+
+    <com.manyi.mobile.widget.CustEditTextLRTB
+        android:id="@+id/custEditTextLRTB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:manyiBackground="@drawable/layout_border_bottom"
+        app:hint="@string/pay_person"
+        app:input_type="text" >
+    </com.manyi.mobile.widget.CustEditTextLRTB>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/loing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custEditTextLRTB2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="提交订单" />
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

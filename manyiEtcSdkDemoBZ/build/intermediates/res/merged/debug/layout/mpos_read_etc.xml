@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/manyi_head" />
+
+    <ImageView
+        android:id="@+id/progressImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dj_liucheng_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="ETC卡号 :"
+            android:textColor="@color/my_color_7"
+            android:textSize="@dimen/fontsize32px" />
+
+        <TextView
+            android:id="@+id/txt_etc_cardno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:text="3701 6732 7233 2932 2345"
+            android:textColor="@color/my_color_5"
+            android:textSize="@dimen/fontsize28px"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="车牌号码  :"
+            android:textColor="@color/my_color_7"
+            android:textSize="@dimen/fontsize32px" />
+
+        <TextView
+            android:id="@+id/txt_plateno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:text="鲁A12345"
+            android:textColor="@color/my_color_5"
+            android:textSize="@dimen/fontsize28px"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="卡内余额 :"
+            android:textColor="@color/my_color_7"
+            android:textSize="@dimen/fontsize32px" />
+
+        <TextView
+            android:id="@+id/txt_card_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:text="250.00元"
+            android:textColor="@color/my_color_5"
+            android:textSize="@dimen/fontsize28px"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="可写卡金额 :"
+            android:textColor="@color/my_color_7"
+            android:textSize="@dimen/fontsize32px" />
+
+        <TextView
+            android:id="@+id/txt_write_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:text="1000.00元"
+            android:textColor="@color/my_color_5"
+            android:textSize="@dimen/fontsize28px"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如有疑问请"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/custom_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_kefu"
+            android:textColor="@color/my_color_9" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_quancun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_login"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="写卡"
+        android:textColor="@color/my_color_white"
+        android:textSize="@dimen/fontsize36px" />
+
+    <TextView
+        android:id="@+id/txt_goto_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="余额不足"
+        android:textColor="@color/my_color_1" />
+
+</LinearLayout>

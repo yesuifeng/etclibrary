@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_back" >
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/text_defult_title_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="待付款"
+            android:textColor="#ff602e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/order_no"
+            style="@style/text_16000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/status"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="150219000000000000"
+            android:textColor="#898989" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/text_16000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/status"
+            android:layout_below="@+id/status"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="担保订单支付" />
+
+        <TextView
+            android:id="@+id/txtOrderAmount"
+            android:textColor="@color/my_color_home_title"
+            android:textSize="@dimen/fontsize28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/status"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="10dp"
+            android:text="订单金额:￥2000" />
+
+        <TextView
+            android:id="@+id/txtActualPaymentAmount"
+            android:textColor="@color/my_color_10"
+            android:textSize="@dimen/fontsize28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/status"
+            android:layout_below="@+id/txtOrderAmount"
+            android:layout_marginTop="5dp"
+            android:text="实付金额:￥2000" />
+
+        <TextView
+            android:id="@+id/details"
+            style="@style/text_16000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtActualPaymentAmount"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/order_no"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="详情>"
+            android:textColor="#898989" />
+
+        <View
+            android:id="@+id/line2"
+            style="@style/list_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/txtActualPaymentAmount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_ok"
+            android:focusable="false"
+            android:paddingBottom="3dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="3dp"
+            android:text="支付"
+            android:textColor="#ff602e"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/loing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pay"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/pay"
+            android:background="@drawable/button_cancle"
+            android:focusable="false"
+            android:paddingBottom="3dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="3dp"
+            android:text="取消"
+            android:textColor="#575756" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_below="@+id/pay" />
+    </RelativeLayout>
+
+    <View
+        style="@style/list_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@drawable/view_item_back" />
+
+</LinearLayout>

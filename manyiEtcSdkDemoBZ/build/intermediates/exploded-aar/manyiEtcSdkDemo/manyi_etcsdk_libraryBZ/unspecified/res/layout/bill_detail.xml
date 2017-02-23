@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/manyi_head" />
+
+    <TextView
+        style="@style/my_text_defult_title_000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp"
+        android:text="交易金额:" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_border_bottom"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="9999"
+        android:textColor="@color/my_color_11"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtTradeTypes"
+        style="@style/text_defult_title_898989"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="交易类型:li" />
+
+    <TextView
+        android:id="@+id/txtTradeTime"
+        style="@style/text_defult_title_898989"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="交易类型:li" />
+
+    <TextView
+        android:id="@+id/txtTradeNo"
+        style="@style/text_defult_title_898989"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="交易类型:li" />
+
+    <LinearLayout
+        style="@style/main_bg_hui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/my_color_3"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtTradeState"
+            android:textSize="@dimen/fontsize40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="ss"
+            android:textColor="@color/my_color_5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtHelp"
+        style="@style/text_defult_title_898989"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="txtHelpClick"
+        android:clickable="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/help" />
+
+</LinearLayout>
